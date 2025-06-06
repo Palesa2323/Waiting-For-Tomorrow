@@ -1734,7 +1734,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 818168098}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1126561459}
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
+        m_MethodName: BackToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &818168098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2591,6 +2603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1126561458}
   - component: {fileID: 1126561457}
+  - component: {fileID: 1126561459}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2627,6 +2640,20 @@ Transform:
   - {fileID: 1715393183}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1126561459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126561456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd94a47c93e72544dab4a0c193df36aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainPanel: {fileID: 697960921}
+  settingsPanel: {fileID: 1715393182}
 --- !u!1 &1149585999
 GameObject:
   m_ObjectHideFlags: 0
