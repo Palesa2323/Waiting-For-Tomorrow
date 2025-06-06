@@ -9,6 +9,18 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("GameScene");
     }
 
+    public void SaveGame()
+    {
+        // Implement load game logic here (if you have saved data)
+        Debug.Log("Load Game clicked");
+    }
+
+    public void OpenSettings()
+    {
+        // Open settings menu or scene
+        Debug.Log("Settings clicked");
+    }
+
     public void QuitGame()
     {
         // Quit the application
@@ -20,4 +32,5 @@ public class MainMenu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
 #endif
     }
+
 }
