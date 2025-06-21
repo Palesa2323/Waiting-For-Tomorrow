@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073613bba8c6d95439146386406705ef, type: 3}
   m_Name: Nomsa
   m_EditorClassIdentifier: 
-  npcName: 
-  greetingText: 
-  greetingEmotion: 
-  dialogueTopics: []
+  npcName: Nomsa
+  greetingText: "Hey! I was hoping I\u2019d bump into you. We\u2019ve got a new skills
+    workshop coming up you in?\r\n"
+  greetingEmotion: hopeful
+  dialogueTopics:
+  - {fileID: 11400000, guid: 85a6633874fe2084cb9ff09ad00ff357, type: 2}
+  - {fileID: 11400000, guid: 57ce70e2508676147b19453b6fe1a783, type: 2}
+  - {fileID: 11400000, guid: a69d138f5aa8cb54cbf2be034dd61174, type: 2}

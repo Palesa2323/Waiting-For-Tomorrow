@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: offer_help
   m_EditorClassIdentifier: 
-  topicId: 
-  playerChoiceText: 
-  lines: []
+  topicId: 'offer_help '
+  playerChoiceText: 'Can I help with anything? '
+  lines:
+  - speaker: Nomsa
+    text: ' You? Absolutely. I need flyers printed, people organized, the works.'
+  - speaker: Player
+    text: " I\u2019m in. Just tell me what to do."
+  - speaker: Nomsa
+    text: Yes! This is how we start. Together.

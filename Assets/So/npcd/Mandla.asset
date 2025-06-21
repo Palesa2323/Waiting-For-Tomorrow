@@ -17,6 +17,6 @@ MonoBehaviour:
     easier ways, just saying..."
   greetingEmotion: cocky
   dialogueTopics:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 51153c44edcfd9f4aa63ea44ec98aa8d, type: 2}
+  - {fileID: 11400000, guid: bc5f9680073c6e24d974277b12d66895, type: 2}
+  - {fileID: 11400000, guid: 064148a4dce0f85428653ee773a2f523, type: 2}

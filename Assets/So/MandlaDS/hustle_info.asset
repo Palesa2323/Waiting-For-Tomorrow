@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: hustle_info
   m_EditorClassIdentifier: 
-  topicId: 
-  playerChoiceText: 
-  lines: []
+  topicId: 'hustle_info '
+  playerChoiceText: 'What kind of hustle are you talking about? '
+  lines:
+  - speaker: Mandla
+    text: You do small runs. Packages. Cash in hand. No tax. No questions.
+  - speaker: Player
+    text: That sounds dangerous.
+  - speaker: Mandla
+    text: Dangerous? Maybe. But I need to eat today, not next year when a job maybe
+      calls back.

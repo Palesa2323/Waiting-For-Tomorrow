@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: try_legit
   m_EditorClassIdentifier: 
-  topicId: 
-  playerChoiceText: 
-  lines: []
+  topicId: mandla_ok
+  playerChoiceText: 'Are you okay, really? '
+  lines:
+  - speaker: Mandla
+    text: "I\u2019m tired, bro. Everyone thinks I\u2019m lazy but I\u2019m out here
+      grinding every day."
+  - speaker: Player
+    text: "You shouldn\u2019t have to carry all that alone."
+  - speaker: Mandla
+    text: "Yeah, well... life didn\u2019t ask what I can carry. Just threw it on
+      me anyway."

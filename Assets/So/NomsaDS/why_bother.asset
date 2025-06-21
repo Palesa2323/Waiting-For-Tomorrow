@@ -12,6 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: why_bother
   m_EditorClassIdentifier: 
-  topicId: 
-  playerChoiceText: 
-  lines: []
+  topicId: 'why_bother '
+  playerChoiceText: 'Why do you even bother? '
+  lines:
+  - speaker: Nomsa
+    text: " Because someone has to. We can\u2019t just sit and wait forever."
+  - speaker: Player
+    text: " But it\u2019s exhausting, isn\u2019t it?"
+  - speaker: Nomsa
+    text: "Of course. But change doesn\u2019t happen when you\u2019re comfortable.
+      It happens when you\u2019re tired and still stand up anyway."

@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 106043912}
   - component: {fileID: 106043911}
   - component: {fileID: 106043910}
+  - component: {fileID: 106043913}
   m_Layer: 0
   m_Name: Mam Nandi
   m_TagString: Untagged
@@ -376,6 +377,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106043908}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &106043913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106043908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf92c62d7cc6b843b0ec3ecb180978d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcDialogue: {fileID: 11400000, guid: 514a8595123c82c44a546a7c69e36629, type: 2}
 --- !u!1 &152787233
 GameObject:
   m_ObjectHideFlags: 0
@@ -1951,7 +1965,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: 0}
+  m_AnchoredPosition: {x: -13, y: 0}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &424699136
@@ -2641,7 +2655,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -109, y: 30}
+  m_AnchoredPosition: {x: -14, y: 30}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &627235023
@@ -4425,6 +4439,7 @@ GameObject:
   - component: {fileID: 1571362428}
   - component: {fileID: 1571362427}
   - component: {fileID: 1571362426}
+  - component: {fileID: 1571362429}
   m_Layer: 0
   m_Name: Nomsa
   m_TagString: Untagged
@@ -4523,6 +4538,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1571362424}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1571362429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571362424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf92c62d7cc6b843b0ec3ecb180978d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcDialogue: {fileID: 11400000, guid: 618a1bd4a4cf68842b15386641525507, type: 2}
 --- !u!1 &1584395932
 GameObject:
   m_ObjectHideFlags: 0
@@ -5043,7 +5071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -278, y: -14}
+  m_AnchoredPosition: {x: -251, y: 17}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1772871933
@@ -5139,7 +5167,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 24.84237}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5392,7 +5420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -110, y: -30}
+  m_AnchoredPosition: {x: -13, y: -30}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2027428911
@@ -5511,7 +5539,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 112, y: 15}
+  m_AnchoredPosition: {x: 112, y: -14}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2085329590
@@ -5607,7 +5635,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 0, w: 23.659393}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5625,6 +5653,7 @@ GameObject:
   - component: {fileID: 2096338915}
   - component: {fileID: 2096338914}
   - component: {fileID: 2096338913}
+  - component: {fileID: 2096338916}
   m_Layer: 0
   m_Name: Mandla
   m_TagString: Untagged
@@ -5723,6 +5752,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096338911}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2096338916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096338911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: baf92c62d7cc6b843b0ec3ecb180978d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcDialogue: {fileID: 11400000, guid: 6c0ae47beb2c1bf499a626263f3014ab, type: 2}
 --- !u!1 &2100806464
 GameObject:
   m_ObjectHideFlags: 0

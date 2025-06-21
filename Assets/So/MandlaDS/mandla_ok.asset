@@ -12,6 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: mandla_ok
   m_EditorClassIdentifier: 
-  topicId: 
-  playerChoiceText: 
-  lines: []
+  topicId: 'try_legit '
+  playerChoiceText: 'Have you tried applying somewhere legit? '
+  lines:
+  - speaker: Mandla
+    text: "Tried. CVs ghosted. Interviews fake. They want someone with experience
+      I can\u2019t afford to get."
+  - speaker: Player
+    text: " That\u2019s messed up."
+  - speaker: Mandla
+    text: "That\u2019s the game, bro. If you ain\u2019t already winning, you don\u2019t
+      even get to play."
