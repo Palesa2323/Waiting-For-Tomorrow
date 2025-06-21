@@ -12,7 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073613bba8c6d95439146386406705ef, type: 3}
   m_Name: Mandla
   m_EditorClassIdentifier: 
-  npcName: 
-  greetingText: 
-  greetingEmotion: 
-  dialogueTopics: []
+  npcName: Mandla
+  greetingText: "Wassup! You still out here chasing \u2018real\u2019 jobs? I got
+    easier ways, just saying..."
+  greetingEmotion: cocky
+  dialogueTopics:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
