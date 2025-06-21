@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\personal\\1st year\\desktop\\wil prototypeee\\wil-prototypee\\wil-prototypee\\assets\\csripts\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\csripts\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\csripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\csripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\personal\\1st year\\desktop\\wil prototypeee\\wil-prototypee\\wil-prototypee\\assets\\csripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\csripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\personal\\1st year\\desktop\\wil prototypeee\\wil-prototypee\\wil-prototypee\\assets\\csripts\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\csripts\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\csripts\\npcdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +34,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NPCTrigger.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\CSripts\\NPCTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\CSripts\\NPCTrigger.cs",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DialogueManager.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\CSripts\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\CSripts\\DialogueManager.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\CSripts\\DialogueManager.cs",
               "RelativeToolTip": "Assets\\CSripts\\DialogueManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowEwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-21T19:01:52.772Z",
               "EditorCaption": ""
