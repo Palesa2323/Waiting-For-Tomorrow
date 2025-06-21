@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
+  m_Name: why_bother
+  m_EditorClassIdentifier: 
+  topicId: 'why_bother '
+  playerChoiceText: 'Why do you even bother? '
+  lines:
+  - speaker: Nomsa
+    text: " Because someone has to. We can\u2019t just sit and wait forever."
+  - speaker: Player
+    text: " But it\u2019s exhausting, isn\u2019t it?"
+  - speaker: Nomsa
+    text: "Of course. But change doesn\u2019t happen when you\u2019re comfortable.
+      It happens when you\u2019re tired and still stand up anyway."

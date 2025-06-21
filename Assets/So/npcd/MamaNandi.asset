@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 073613bba8c6d95439146386406705ef, type: 3}
+  m_Name: MamaNandi
+  m_EditorClassIdentifier: 
+  npcName: Mama Nandi
+  greetingText: Ah, Thabo/Zanele. Come inside, child...
+  greetingEmotion: warm
+  dialogueTopics:
+  - {fileID: 11400000, guid: 4b10568c940d7a0488ae754baa5681b8, type: 2}
+  - {fileID: 11400000, guid: 4272481cc7c43c94a8ab57bf6d7d63f3, type: 2}
+  - {fileID: 11400000, guid: ade0f3823a661c3488f55ac2b22fddea, type: 2}

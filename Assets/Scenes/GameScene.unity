@@ -3911,8 +3911,6 @@ MonoBehaviour:
   - {fileID: 424699138}
   - {fileID: 2027428913}
   nextButton: {fileID: 545145415}
-  currentTopic: {fileID: 0}
-  lineIndex: 0
 --- !u!4 &1300969702
 Transform:
   m_ObjectHideFlags: 0
@@ -4718,9 +4716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5bedce9a92c00f49a032e1f9d09ae79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialoguePanel: {fileID: 0}
-  dialogueText: {fileID: 0}
-  continueButton: {fileID: 0}
 --- !u!4 &1592451881
 Transform:
   m_ObjectHideFlags: 0
@@ -4801,7 +4796,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25dcdfa4a4dc42246954ed463133e234, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueManager: {fileID: 0}
 --- !u!4 &1633454691
 Transform:
   m_ObjectHideFlags: 0

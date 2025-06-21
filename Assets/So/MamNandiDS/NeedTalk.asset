@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
+  m_Name: NeedTalk
+  m_EditorClassIdentifier: 
+  topicId: 'soup_kitchen '
+  playerChoiceText: 'How are things at the soup kitchen? '
+  lines:
+  - speaker: Mama Nandi
+    text: Busy, as always. Some days we run out of bread by noon.
+  - speaker: Player
+    text: That many people come for food?
+  - speaker: Mama Nandi
+    text: More than I ever thought I'd see. Young ones, old ones..
+  - speaker: Player
+    text: "It\u2019s heartbreaking."
+  - speaker: Mama Nandi
+    text: "\tHeartbreaking, yes. But also motivating... "
