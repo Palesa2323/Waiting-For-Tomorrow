@@ -3,15 +3,10 @@ using UnityEngine;
 public class DialogueTester : MonoBehaviour
 {
     public DialogueManager dialogueManager;
+    public NPCDialogue testNPCDialogue; // drag an SO into this in the Inspector
 
     void Start()
     {
-        string[] testDialogue = {
-            "Hello, welcome to the township.",
-            "Finding a job here is difficult, but stay hopeful.",
-            "Try talking to the community leaders to learn more."
-        };
-
-        dialogueManager.StartDialogue(testDialogue);
+        dialogueManager.StartDialogue(testNPCDialogue);
     }
 }
