@@ -73,7 +73,8 @@ public class playerMovement : MonoBehaviour
 
     private void MovePlayer()
     {
-        movementDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        movementDirection = transform.forward * verticalInput + transform.right * horizontalInput;
+        
 
         if (grounded)
         {
