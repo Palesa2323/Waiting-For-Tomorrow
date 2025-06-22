@@ -1,38 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\",
+  "WorkspaceRootPath": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\dialoguetester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguetester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\esihl\\onedrive\\documents\\github\\wil-prototypee\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\personal\\1st year\\desktop\\wil prototypeee\\wil-prototypee\\wil-prototypee\\assets\\scripts\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\esihl\\onedrive\\documents\\github\\wil-prototypee\\assets\\scripts\\playereyes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playereyes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\inventoryskillsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\inventoryskillsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\inventoryskillsui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\scriptableobjects\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\scriptableobjects\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobjects\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\scriptableobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\scriptableobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialoguetester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguetester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\menumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\scripts\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,28 +50,53 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DialogueUIManager.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\DialogueUIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueUIManager.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\DialogueUIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\DialogueUIManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "playerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\playerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\playerMovement.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\playerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\playerMovement.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T20:09:47.206Z",
+              "WhenOpened": "2025-06-18T17:18:22.617Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "cameraMovement.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\cameraMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\cameraMovement.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\cameraMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\cameraMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T17:04:13.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "playerEyes.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\playerEyes.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\playerEyes.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\playerEyes.cs",
+              "RelativeToolTip": "Assets\\Scripts\\playerEyes.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T16:42:37.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "InventorySkillsUI.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\InventorySkillsUI.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\InventorySkillsUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySkillsUI.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\InventorySkillsUI.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\InventorySkillsUI.cs",
               "RelativeToolTip": "Assets\\Scripts\\InventorySkillsUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -71,11 +104,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Skill.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\Skill.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\Skill.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObjects\\Skill.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\Skill.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\Skill.cs",
               "RelativeToolTip": "Assets\\Scripts\\ScriptableObjects\\Skill.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -83,11 +116,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "item.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObjects\\item.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
               "RelativeToolTip": "Assets\\Scripts\\ScriptableObjects\\item.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -95,36 +128,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "DialogueTester.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\DialogueTester.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\DialogueTester.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueTester.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\DialogueTester.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\DialogueTester.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialogueTester.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T00:38:22.1Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-08T00:38:22.1Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "DialogueManager.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\DialogueManager.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\DialogueManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DialogueManager.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\DialogueManager.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\DialogueManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\DialogueManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAsAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T00:35:08.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "MenuManager.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\MenuManager.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\MenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuManager.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\MenuManager.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\MenuManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MenuManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -132,11 +164,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "MainMenu.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\MainMenu.cs",
+              "DocumentMoniker": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenu.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\MainMenu.cs",
+              "ToolTip": "C:\\Users\\esihl\\OneDrive\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\MainMenu.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenu.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
