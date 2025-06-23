@@ -12,16 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: NeedTalk
   m_EditorClassIdentifier: 
-  topicId: 'soup_kitchen '
-  playerChoiceText: 'How are things at the soup kitchen? '
+  id: need_talk
+  playerChoiceText: need_talk
   lines:
   - speaker: Mama Nandi
-    text: Busy, as always. Some days we run out of bread by noon.
+    text: Then sit. No tea, but I've got ears and heart.
   - speaker: Player
-    text: That many people come for food?
+    text: Everything just feels stuck. I keep trying, and nothing changes
   - speaker: Mama Nandi
-    text: More than I ever thought I'd see. Young ones, old ones..
+    text: Mmmm... even rain takes time to fall, but it does come. And when it does,
+      even dry land drinks.
   - speaker: Player
-    text: "It\u2019s heartbreaking."
+    text: "ut what if it doesn\u2019t come for me?"
   - speaker: Mama Nandi
-    text: "\tHeartbreaking, yes. But also motivating... "
+    text: "Then you scream at the sky until it listens. You\u2019re allowed to be
+      tired, child. But not to give up."
+  unlockTask: {fileID: 11400000, guid: d73ee1d5c2a9d754986aeb2fc28fe387, type: 2}

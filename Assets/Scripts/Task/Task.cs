@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "NewGameTask", menuName = "Game/Task")]
+[CreateAssetMenu(fileName = "NewTask", menuName = "Tasks/Game Task")]
 public class GameTask : ScriptableObject
 {
     public string taskName;
@@ -8,4 +8,3 @@ public class GameTask : ScriptableObject
     public string topic;
     public bool isCompleted;
 }
-

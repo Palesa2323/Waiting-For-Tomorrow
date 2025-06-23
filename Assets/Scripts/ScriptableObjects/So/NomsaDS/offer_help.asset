@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: offer_help
   m_EditorClassIdentifier: 
-  topicId: 'offer_help '
+  id: 
   playerChoiceText: 'Can I help with anything? '
   lines:
   - speaker: Nomsa
@@ -21,3 +21,4 @@ MonoBehaviour:
     text: " I\u2019m in. Just tell me what to do."
   - speaker: Nomsa
     text: Yes! This is how we start. Together.
+  unlockTask: {fileID: 11400000, guid: 6b5dd466b5d811140a27e2a23eff9aa7, type: 2}

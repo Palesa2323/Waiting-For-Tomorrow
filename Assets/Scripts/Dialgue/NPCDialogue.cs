@@ -5,6 +5,7 @@ public class NPCDialogue : ScriptableObject
 {
     public GameTask unlockTask;
     public string topic;
+    public DialogueTopic currentTopic;
 
     public string npcName;
     [TextArea(2, 5)]

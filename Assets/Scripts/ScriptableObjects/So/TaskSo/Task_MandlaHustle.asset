@@ -10,8 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
-  m_Name: Task_MandlaCV
+  m_Name: Task_MandlaHustle
   m_EditorClassIdentifier: 
-  taskID: 
-  description: 
+  taskName: Decide whether to do the shady delivery job Mandla offered
+  npcName: Mandla
+  topic: hustle_info
   isCompleted: 0

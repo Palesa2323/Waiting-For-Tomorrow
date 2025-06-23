@@ -12,6 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: SoupKitchen
   m_EditorClassIdentifier: 
-  topicId: 
-  playerChoiceText: 
-  lines: []
+  id: soup_kitchen
+  playerChoiceText: 'How are things at the soup kitchen?
+
+'
+  lines:
+  - speaker: Mama Nandi
+    text: Busy, as always. Some days we run out of bread by noon.
+  - speaker: Player
+    text: That many people come for food?
+  - speaker: Mama Nandi
+    text: More than I ever thought I'd see. Young ones, old ones..
+  - speaker: Player
+    text: "It\u2019s heartbreaking."
+  - speaker: Mama Nandi
+    text: Heartbreaking, yes. But also motivating...
+  unlockTask: {fileID: 0}

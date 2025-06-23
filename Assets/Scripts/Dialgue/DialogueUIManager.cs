@@ -8,41 +8,37 @@ public class DialogueUIManager : MonoBehaviour
     public TMP_Text speakerText;
     public TMP_Text dialogueText;
     public Button continueButton;
+    public Button completeTaskButton; 
+
     public Button[] optionButtons;
-    public GameObject taskPanel;  // Assign your TaskPanel here in Inspector
-    private NPCDialogue currentDialogue;  // Your existing dialogue data ref
-   
+    public GameObject taskPanel;  
 
-
-
+    private NPCDialogue currentDialogue;
     private DialogueTopic currentTopic;
     private int currentLineIndex = 0;
-    private NPCDialogue dialogue;
 
     void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
 
-        Debug.Log("DialogueUIManager is ready.");
         dialoguePanel.SetActive(false);
         continueButton.onClick.AddListener(NextLine);
+
+        completeTaskButton.gameObject.SetActive(false);  // Hide initially
+        completeTaskButton.onClick.AddListener(OnCompleteTaskClicked);
     }
 
     public void StartDialogue(NPCDialogue npc)
     {
-        currentDialogue = dialogue;
+        currentDialogue = npc; // ✅ FIXED! Don't use uninitialized `dialogue` field
         Debug.Log("Starting dialogue with NPC: " + npc.npcName);
-
-        if (npc.dialogueTopics.Length < optionButtons.Length)
-        {
-            Debug.LogWarning("Not enough topics to fill all buttons.");
-        }
 
         dialoguePanel.SetActive(true);
         speakerText.text = npc.npcName;
         dialogueText.text = npc.greetingText;
 
+        // Display available topics
         for (int i = 0; i < optionButtons.Length; i++)
         {
             if (i < npc.dialogueTopics.Length)
@@ -53,8 +49,6 @@ public class DialogueUIManager : MonoBehaviour
                 int index = i;
                 optionButtons[i].onClick.RemoveAllListeners();
                 optionButtons[i].onClick.AddListener(() => StartTopic(npc.dialogueTopics[index]));
-
-                Debug.Log("Option button " + i + " assigned to topic: " + npc.dialogueTopics[i].playerChoiceText);
             }
             else
             {
@@ -70,8 +64,6 @@ public class DialogueUIManager : MonoBehaviour
         currentTopic = topic;
         currentLineIndex = 0;
 
-        Debug.Log("Started topic: " + topic.playerChoiceText + " with " + topic.lines.Length + " lines.");
-
         foreach (Button btn in optionButtons)
             btn.gameObject.SetActive(false);
 
@@ -86,18 +78,13 @@ public class DialogueUIManager : MonoBehaviour
             DialogueLine line = currentTopic.lines[currentLineIndex];
             speakerText.text = line.speaker;
             dialogueText.text = line.text;
-            Debug.Log($"Showing line {currentLineIndex}: [{line.speaker}] {line.text}");
-        }
-        else
-        {
-            Debug.LogWarning("Tried to show a line out of bounds.");
-            EndDialogue();
         }
     }
 
     void NextLine()
     {
         currentLineIndex++;
+
         if (currentLineIndex < currentTopic.lines.Length)
         {
             ShowLine();
@@ -106,39 +93,36 @@ public class DialogueUIManager : MonoBehaviour
         {
             Debug.Log("Reached end of topic.");
 
+            // 🔓 Unlock the task if present
             if (currentTopic.unlockTask != null)
             {
                 TaskManager.Instance.UnlockTask(currentTopic.unlockTask);
                 Debug.Log("✅ Task unlocked: " + currentTopic.unlockTask.taskName);
             }
 
-            EndDialogue();
+            // Hide continue button, show complete task button
+            continueButton.gameObject.SetActive(false);
+            completeTaskButton.gameObject.SetActive(true);  // 👀 Now the player sees it!
         }
-
     }
+
 
     public void EndDialogue()
     {
         dialoguePanel.SetActive(false);
-        Debug.Log("Dialogue panel closed.");
         currentTopic = null;
         currentLineIndex = 0;
-        if (currentDialogue != null)
-        {
-            TaskManager.Instance.CompleteTaskForNPC(currentDialogue.npcName, currentDialogue.topic);
-            currentDialogue = null;
-        }
 
+        // 🧾 Show task panel
         if (taskPanel != null)
         {
             taskPanel.SetActive(true);
-
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-
-            Time.timeScale = 0f;  // Pause game while task panel is open
+            Time.timeScale = 0f; // Pause game
         }
 
+        currentDialogue = null;
     }
 
     public void CloseTaskPanel()
@@ -146,11 +130,30 @@ public class DialogueUIManager : MonoBehaviour
         if (taskPanel != null)
         {
             taskPanel.SetActive(false);
-
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            Time.timeScale = 1f;
+        }
+    }
 
-            Time.timeScale = 1f; // Resume game
+    void OnCompleteTaskClicked()
+    {
+        completeTaskButton.gameObject.SetActive(false);
+
+        if (currentDialogue != null && currentTopic != null)
+        {
+            TaskManager.Instance.CompleteTaskForNPC(currentDialogue.npcName, currentTopic.id);
+            Debug.Log("✅ Task completed for: " + currentDialogue.npcName + " | Topic: " + currentTopic.id);
+        }
+
+        EndDialogue();
+
+        if (taskPanel != null)
+        {
+            taskPanel.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            Time.timeScale = 0f;
         }
     }
 

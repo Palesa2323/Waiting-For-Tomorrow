@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: hustle_info
   m_EditorClassIdentifier: 
-  topicId: 'hustle_info '
+  id: 
   playerChoiceText: 'What kind of hustle are you talking about? '
   lines:
   - speaker: Mandla
@@ -22,3 +22,4 @@ MonoBehaviour:
   - speaker: Mandla
     text: Dangerous? Maybe. But I need to eat today, not next year when a job maybe
       calls back.
+  unlockTask: {fileID: 11400000, guid: f5875ea5b5fdbb8478cb298498cda258, type: 2}
