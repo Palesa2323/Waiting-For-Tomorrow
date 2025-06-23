@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
@@ -98,8 +98,16 @@ public class DialogueUIManager : MonoBehaviour
         else
         {
             Debug.Log("Reached end of topic.");
+
+            if (currentTopic.unlockTask != null)
+            {
+                TaskManager.Instance.UnlockTask(currentTopic.unlockTask);
+                Debug.Log("✅ Task unlocked: " + currentTopic.unlockTask.taskName);
+            }
+
             EndDialogue();
         }
+
     }
 
     public void EndDialogue()
