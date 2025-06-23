@@ -1,20 +1,32 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+using UnityEngine.UI;
 
 public class TaskUI : MonoBehaviour
 {
-    public TMP_Text taskText;
+    public GameObject taskItemPrefab;  // Assign TaskItem prefab here
+    public Transform taskListParent;   // Assign TaskListContainer here
 
-    public void UpdateTaskList(List<Task> tasks)
+    private List<GameObject> activeTaskItems = new List<GameObject>();
+
+    public void UpdateTaskList(List<GameTask> tasks)
     {
-        string output = "<b>📝 Tasks</b>\n";
+        // Clear old task items
+        foreach (var item in activeTaskItems)
+            Destroy(item);
+        activeTaskItems.Clear();
 
-        foreach (Task task in tasks)
+        // Create new task items and stack vertically
+        foreach (var task in tasks)
         {
-            output += task.isCompleted ? $"☑ {task.description}\n" : $"☐ {task.description}\n";
-        }
+            GameObject newItem = Instantiate(taskItemPrefab, taskListParent);
+            Text textComponent = newItem.GetComponent<Text>();
+            string status = task.isCompleted ? "✔️ " : "❌ ";
+            textComponent.text = status + task.taskName;
 
-        taskText.text = output;
+            activeTaskItems.Add(newItem);
+        }
     }
 }
+
+

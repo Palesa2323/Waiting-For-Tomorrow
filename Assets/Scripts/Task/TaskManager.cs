@@ -5,7 +5,7 @@ public class TaskManager : MonoBehaviour
 {
     public static TaskManager Instance;
 
-    public List<Task> allTasks = new List<Task>();
+    public List<GameTask> allTasks = new List<GameTask>();
     public TaskUI taskUI;
 
     private bool isTaskUIActive = false;
@@ -18,7 +18,7 @@ public class TaskManager : MonoBehaviour
 
     void Update()
     {
-        // Example: Toggle task UI with T key (change this to your actual UI toggle)
+        // Toggle task UI with T key (adjust as needed)
         if (Input.GetKeyDown(KeyCode.T))
         {
             isTaskUIActive = !isTaskUIActive;
@@ -37,7 +37,7 @@ public class TaskManager : MonoBehaviour
         }
     }
 
-    public void UnlockTask(Task task)
+    public void UnlockTask(GameTask task)
     {
         if (!allTasks.Contains(task))
         {
@@ -46,9 +46,24 @@ public class TaskManager : MonoBehaviour
         }
     }
 
-    public void CompleteTask(Task task)
+    public void CompleteTask(GameTask task)
     {
         task.isCompleted = true;
         taskUI.UpdateTaskList(allTasks);
+    }
+
+    public void CompleteTaskForNPC(string npcName, string topic)
+    {
+        GameTask task = allTasks.Find(t => t.npcName == npcName && t.topic == topic);
+        if (task != null && !task.isCompleted)
+        {
+            task.isCompleted = true;
+            taskUI.UpdateTaskList(allTasks);
+            Debug.Log($"Task '{task.taskName}' completed after talking to {npcName} about {topic}!");
+        }
+        else
+        {
+            Debug.LogWarning($"No matching task found for NPC: {npcName} with topic: {topic}");
+        }
     }
 }

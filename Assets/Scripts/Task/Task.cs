@@ -1,13 +1,11 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Task", menuName = "Task/Basic Task")]
-public class Task : ScriptableObject
+[CreateAssetMenu(fileName = "NewGameTask", menuName = "Game/Task")]
+public class GameTask : ScriptableObject
 {
     public string taskName;
-    [TextArea(2, 4)] public string description;
-
+    public string npcName;
+    public string topic;
     public bool isCompleted;
-
-    // Optional: a target the player should go to
-    public Transform taskLocation;
 }
+

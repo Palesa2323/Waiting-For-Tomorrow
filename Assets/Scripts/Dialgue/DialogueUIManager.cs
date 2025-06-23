@@ -9,9 +9,15 @@ public class DialogueUIManager : MonoBehaviour
     public TMP_Text dialogueText;
     public Button continueButton;
     public Button[] optionButtons;
+    public GameObject taskPanel;  // Assign your TaskPanel here in Inspector
+    private NPCDialogue currentDialogue;  // Your existing dialogue data ref
+   
+
+
 
     private DialogueTopic currentTopic;
     private int currentLineIndex = 0;
+    private NPCDialogue dialogue;
 
     void Start()
     {
@@ -25,6 +31,7 @@ public class DialogueUIManager : MonoBehaviour
 
     public void StartDialogue(NPCDialogue npc)
     {
+        currentDialogue = dialogue;
         Debug.Log("Starting dialogue with NPC: " + npc.npcName);
 
         if (npc.dialogueTopics.Length < optionButtons.Length)
@@ -116,8 +123,35 @@ public class DialogueUIManager : MonoBehaviour
         Debug.Log("Dialogue panel closed.");
         currentTopic = null;
         currentLineIndex = 0;
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked; // or .Confined if 3rd-person
+        if (currentDialogue != null)
+        {
+            TaskManager.Instance.CompleteTaskForNPC(currentDialogue.npcName, currentDialogue.topic);
+            currentDialogue = null;
+        }
+
+        if (taskPanel != null)
+        {
+            taskPanel.SetActive(true);
+
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+
+            Time.timeScale = 0f;  // Pause game while task panel is open
+        }
 
     }
+
+    public void CloseTaskPanel()
+    {
+        if (taskPanel != null)
+        {
+            taskPanel.SetActive(false);
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+
+            Time.timeScale = 1f; // Resume game
+        }
+    }
+
 }
