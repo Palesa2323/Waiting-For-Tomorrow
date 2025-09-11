@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: SoupKitchen
   m_EditorClassIdentifier: 
-  taskName: Help Mandla write and improve his CV
-  npcName: Mandla
-  topic: try_legit
-  isCompleted: 0
+  taskName: Soup Kitchen Shift
+  description: Assist Mam Nandi at the local soup kitchen.
+  moneyReward: 0
+  foodReward: 5
+  stressChange: -5
+  sourceNPC: Mam Nandi
+  topicId: soup_kitchen

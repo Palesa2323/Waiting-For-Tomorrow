@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073613bba8c6d95439146386406705ef, type: 3}
   m_Name: Mandla
   m_EditorClassIdentifier: 
+  unlockTask: {fileID: 11400000, guid: 4726b72ecb0cb5547bea037e0e628403, type: 2}
+  topic: 
+  currentTopic: {fileID: 11400000, guid: bc5f9680073c6e24d974277b12d66895, type: 2}
   npcName: Mandla
   greetingText: "Wassup! You still out here chasing \u2018real\u2019 jobs? I got
     easier ways, just saying..."

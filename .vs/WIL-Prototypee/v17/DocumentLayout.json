@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\task\\taskpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\task\\taskpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\personal\\1st year\\desktop\\wil prototypeee\\wil-prototypee\\wil-prototypee\\assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\task\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\task\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\personal\\1st year\\desktop\\wil prototypeee\\wil-prototypee\\wil-prototypee\\assets\\scripts\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\onedrive - advtech ltd\\personal\\1st year\\desktop\\wil prototypeee\\wil-prototypee\\wil-prototypee\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\task\\taskui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,12 +19,24 @@
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\task\\task.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\task\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\task\\taskmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\task\\taskpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\task\\taskpanelui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\scriptableobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\resourcemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\task\\taskgiver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,10 +67,6 @@
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobjects\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\scriptableobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scriptableobjects\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -90,20 +90,72 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ResourceManager.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ResourceManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ResourceManager.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ResourceManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ResourceManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "DialogueUIManager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowJ0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T11:15:24.553Z",
+              "WhenOpened": "2025-06-22T21:28:23.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "item.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObjects\\item.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScriptableObjects\\item.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-08T00:50:47.07Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Task.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\Task.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\Task.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\Task.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Task\\Task.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA4AAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T10:29:36.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaskPanelUI.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskPanelUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\TaskPanelUI.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskPanelUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Task\\TaskPanelUI.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T11:08:55.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "TaskManager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\TaskManager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Task\\TaskManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T10:33:40.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "TaskUI.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\TaskUI.cs",
@@ -111,11 +163,24 @@
               "RelativeToolTip": "Assets\\Scripts\\Task\\TaskUI.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAIAwwB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T10:34:34.597Z"
+              "WhenOpened": "2025-06-23T10:34:34.597Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "ResourceManager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ResourceManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ResourceManager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ResourceManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ResourceManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T11:15:24.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "playerMovement.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\playerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerMovement.cs",
@@ -127,45 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DialogueUIManager.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAmwJ0AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T21:28:23.529Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Task.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\Task.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\Task.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\Task.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Task\\Task.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA4AAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T10:29:36.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TaskManager.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\TaskManager.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Task\\TaskManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T10:33:40.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "cameraMovement.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\cameraMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\cameraMovement.cs",
@@ -173,24 +200,11 @@
               "RelativeToolTip": "Assets\\Scripts\\cameraMovement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T21:37:36.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-22T21:37:36.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TaskPanelUI.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskPanelUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\TaskPanelUI.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskPanelUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Task\\TaskPanelUI.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-11T11:08:55.232Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TaskGiver.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Task\\TaskGiver.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Task\\TaskGiver.cs",
@@ -202,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "playerEyes.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\playerEyes.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\playerEyes.cs",
@@ -214,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "NPCDialogue.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
@@ -226,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "NPCTrigger.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
@@ -238,7 +252,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TaskManager.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\Tasks\\TaskManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Tasks\\TaskManager.cs",
@@ -250,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "InventorySkillsUI.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\InventorySkillsUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\InventorySkillsUI.cs",
@@ -274,7 +288,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Skill.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\Skill.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObjects\\Skill.cs",
@@ -283,18 +297,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-08T00:51:23.748Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "item.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ScriptableObjects\\item.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\OneDrive - ADvTECH Ltd\\Personal\\1st Year\\Desktop\\Wil Prototypeee\\WIL-Prototypee\\WIL-Prototypee\\Assets\\Scripts\\ScriptableObjects\\item.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ScriptableObjects\\item.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T00:50:47.07Z"
             },
             {
               "$type": "Document",

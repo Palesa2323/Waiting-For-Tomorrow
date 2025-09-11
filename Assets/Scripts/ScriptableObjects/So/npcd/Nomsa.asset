@@ -12,6 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073613bba8c6d95439146386406705ef, type: 3}
   m_Name: Nomsa
   m_EditorClassIdentifier: 
+  unlockTask: {fileID: 11400000, guid: 3a1c51453c6dcce4bbe854425d8a9375, type: 2}
+  topic: 
+  currentTopic: {fileID: 11400000, guid: 85a6633874fe2084cb9ff09ad00ff357, type: 2}
   npcName: Nomsa
   greetingText: "Hey! I was hoping I\u2019d bump into you. We\u2019ve got a new skills
     workshop coming up you in?\r\n"

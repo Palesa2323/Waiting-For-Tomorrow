@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: TryLegit
   m_EditorClassIdentifier: 
-  taskName: 
-  description: 
-  moneyReward: 0
+  taskName: Try Legit
+  description: Try a small, legal side-job Mandla recommends.
+  moneyReward: 10
   foodReward: 0
-  stressChange: 0
-  sourceNPC: 
+  stressChange: -5
+  sourceNPC: Mandla
   topicId: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: workshop_info
   m_EditorClassIdentifier: 
-  topicId: 'workshop_info '
+  id: 
   playerChoiceText: 'Tell me more about the workshop. '
   lines:
   - speaker: Nomsa
@@ -23,3 +23,4 @@ MonoBehaviour:
   - speaker: Nomsa
     text: "Anyone. Especially the ones who think they\u2019re too far behind. That\u2019s
       who we\u2019re here for.\r\n"
+  unlockTask: {fileID: 11400000, guid: 3a1c51453c6dcce4bbe854425d8a9375, type: 2}

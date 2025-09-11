@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: Task_MandlaHustle
   m_EditorClassIdentifier: 
-  taskName: Decide whether to do the shady delivery job Mandla offered
-  npcName: Mandla
-  topic: hustle_info
-  isCompleted: 0
+  taskName: Hustle Info
+  description: Help Mandla gather info about local hustles.
+  moneyReward: 0
+  foodReward: 0
+  stressChange: -3
+  sourceNPC: Mandla
+  topicId: 

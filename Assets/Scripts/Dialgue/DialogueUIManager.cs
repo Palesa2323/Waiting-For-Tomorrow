@@ -146,24 +146,15 @@ public class DialogueUIManager : MonoBehaviour
     {
         completeTaskButton.gameObject.SetActive(false);
 
-        // Open the Task Panel UI
         if (taskPanel != null)
         {
             taskPanel.SetActive(true);
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            Time.timeScale = 0f; // Pause game while viewing tasks
+            Time.timeScale = 0f; // pause game
         }
 
         EndDialogue();
-
-        if (taskPanel != null)
-        {
-            taskPanel.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            Time.timeScale = 0f;
-        }
     }
 
 }

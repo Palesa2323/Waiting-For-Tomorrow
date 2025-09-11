@@ -12,7 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: Task_NandiHelp
   m_EditorClassIdentifier: 
-  taskName: Volunteer to help Nomsa print flyers and organize people
-  npcName: Nomsa
-  topic: offer_help
-  isCompleted: 0
+  taskName: Offer Help
+  description: Help Nomsa with minor community tasks.
+  moneyReward: 0
+  foodReward: 5
+  stressChange: -5
+  sourceNPC: Nomsa
+  topicId: offer_help

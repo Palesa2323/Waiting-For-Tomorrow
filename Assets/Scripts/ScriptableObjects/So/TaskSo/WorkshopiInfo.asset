@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: WorkshopiInfo
   m_EditorClassIdentifier: 
-  taskName: 
-  description: 
+  taskName: Workshop Info
+  description: "Attend Nomsa\u2019s workshop to learn a new skill."
   moneyReward: 0
   foodReward: 0
-  stressChange: 0
-  sourceNPC: 
+  stressChange: -5
+  sourceNPC: Nomsa
   topicId: 

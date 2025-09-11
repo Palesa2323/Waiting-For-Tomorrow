@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: NeedTalk
   m_EditorClassIdentifier: 
   id: need_talk
-  playerChoiceText: need_talk
+  playerChoiceText: Do you need to talk about it ?
   lines:
   - speaker: Mama Nandi
     text: Then sit. No tea, but I've got ears and heart.

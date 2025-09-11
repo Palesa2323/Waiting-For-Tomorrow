@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: WhyBother
   m_EditorClassIdentifier: 
-  taskName: 
-  description: 
+  taskName: Why Bother
+  description: Encourage Nomsa to stay motivated; small chat improves morale.
   moneyReward: 0
   foodReward: 0
-  stressChange: 0
-  sourceNPC: 
-  topicId: 
+  stressChange: -10
+  sourceNPC: Nomsa
+  topicId: why_bother

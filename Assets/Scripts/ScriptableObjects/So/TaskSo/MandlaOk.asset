@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: MandlaOk
   m_EditorClassIdentifier: 
-  taskName: 
-  description: 
-  moneyReward: 0
+  taskName: Mandla Ok
+  description: Support Mandla in his small business task.
+  moneyReward: 5
   foodReward: 0
-  stressChange: 0
-  sourceNPC: 
-  topicId: 
+  stressChange: -5
+  sourceNPC: Mandla
+  topicId: mandla_ok

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
   m_Name: TalkAboutLife
   m_EditorClassIdentifier: 
-  taskName: Carry Water
-  description: 
+  taskName: Talk About Life
+  description: "Sit and listen to Mam Nandi\u2019s advice; she feels better after
+    sharing."
   moneyReward: 0
   foodReward: 0
-  stressChange: 0
-  sourceNPC: 
-  topicId: 
+  stressChange: -10
+  sourceNPC: Mam Nandi
+  topicId: need_talk

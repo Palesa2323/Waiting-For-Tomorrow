@@ -1,14 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.Resources;
 using UnityEngine;
 
 public class TaskManager : MonoBehaviour
 {
     public static TaskManager Instance { get; private set; }
 
-    private List<GameTask> activeTasks = new List<GameTask>();
-    public IReadOnlyList<GameTask> ActiveTasks => activeTasks;
+    public List<GameTask> activeTasks = new List<GameTask>();
+
+    public List<GameTask> ActiveTasks => activeTasks; // public getter
 
     public event Action OnTaskListUpdated;
     public event Action<GameTask> OnTaskCompleted;
@@ -18,51 +18,40 @@ public class TaskManager : MonoBehaviour
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
-        // Optionally persist across scenes:
-        // DontDestroyOnLoad(gameObject);
+        // DontDestroyOnLoad(gameObject); // optional
     }
 
     /// <summary>
-    /// Adds a task to the active list. Safe to call multiple times - duplicates prevented.
+    /// Unlocks a task, adds it to activeTasks.
     /// </summary>
     public void UnlockTask(GameTask task)
     {
-        if (task == null)
-        {
-            Debug.LogWarning("TaskManager.UnlockTask called with null GameTask.");
-            return;
-        }
+        if (task == null) return;
 
-        if (activeTasks.Contains(task))
+        if (!activeTasks.Contains(task))
         {
-            Debug.Log($"TaskManager: task already active: {task.taskName}");
-            return;
+            activeTasks.Add(task);
+            Debug.Log("✅ Task unlocked: " + task.taskName);
+            OnTaskUnlocked?.Invoke(task);
+            OnTaskListUpdated?.Invoke(); // notify UI to refresh
         }
-
-        activeTasks.Add(task);
-        OnTaskListUpdated?.Invoke();
-        OnTaskUnlocked?.Invoke(task);
-        Debug.Log($"TaskManager: unlocked task '{task.taskName}' (source: {task.sourceNPC} topic: {task.topicId})");
     }
 
-    /// <summary>
-    /// Legacy AddTask alias (keeps compatibility).
-    /// </summary>
     public void AddTask(GameTask task) => UnlockTask(task);
 
     /// <summary>
-    /// Completes a specific TaskData and applies rewards.
+    /// Completes a task and applies rewards.
     /// </summary>
     public void CompleteTask(GameTask task)
     {
         if (task == null) return;
+
         if (!activeTasks.Contains(task))
         {
             Debug.LogWarning($"TaskManager.CompleteTask: task not active: {task.taskName}");
             return;
         }
 
-        // Apply rewards via ResourceManager (ensure it exists)
         if (ResourceManager.Instance != null)
         {
             ResourceManager.Instance.ChangeMoney(task.moneyReward);
@@ -77,12 +66,11 @@ public class TaskManager : MonoBehaviour
         activeTasks.Remove(task);
         OnTaskListUpdated?.Invoke();
         OnTaskCompleted?.Invoke(task);
-        Debug.Log($"TaskManager: completed task '{task.taskName}' and applied rewards.");
+        Debug.Log($"✅ Task completed: {task.taskName}");
     }
 
     /// <summary>
-    /// Finds the active task that was unlocked by this NPC topic and completes it.
-    /// Returns true if a task was found & completed.
+    /// Completes a task for a specific NPC/topic
     /// </summary>
     public bool CompleteTaskForNPC(string npcName, string topicId)
     {
@@ -92,7 +80,6 @@ public class TaskManager : MonoBehaviour
             return false;
         }
 
-        // Find first matching active task by metadata
         GameTask found = activeTasks.Find(t => t != null &&
                                                t.sourceNPC == npcName &&
                                                t.topicId == topicId);
@@ -103,21 +90,15 @@ public class TaskManager : MonoBehaviour
             return true;
         }
 
-        Debug.LogWarning($"TaskManager: No active task found for NPC '{npcName}' with topicId '{topicId}'.");
+        Debug.LogWarning($"No active task found for NPC '{npcName}' with topicId '{topicId}'");
         return false;
     }
 
-    /// <summary>
-    /// Utility: remove task without applying reward (if needed)
-    /// </summary>
     public void RemoveTask(GameTask task)
     {
         if (task == null) return;
         if (activeTasks.Remove(task)) OnTaskListUpdated?.Invoke();
     }
 
-    /// <summary>
-    /// Utility: check if a particular task is active
-    /// </summary>
     public bool IsTaskActive(GameTask task) => task != null && activeTasks.Contains(task);
 }

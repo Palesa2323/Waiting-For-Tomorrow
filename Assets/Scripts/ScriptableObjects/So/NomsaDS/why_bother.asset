@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb87fc7884e09a74d8a1d9d887961557, type: 3}
   m_Name: why_bother
   m_EditorClassIdentifier: 
-  topicId: 'why_bother '
+  id: 
   playerChoiceText: 'Why do you even bother? '
   lines:
   - speaker: Nomsa
@@ -22,3 +22,4 @@ MonoBehaviour:
   - speaker: Nomsa
     text: "Of course. But change doesn\u2019t happen when you\u2019re comfortable.
       It happens when you\u2019re tired and still stand up anyway."
+  unlockTask: {fileID: 11400000, guid: a5e3544b2914244438946fdf6c5965aa, type: 2}

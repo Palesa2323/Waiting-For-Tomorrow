@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 073613bba8c6d95439146386406705ef, type: 3}
   m_Name: Mam Nandi
   m_EditorClassIdentifier: 
-  unlockTask: {fileID: 0}
+  unlockTask: {fileID: 11400000, guid: d6af851e0b14f6c48963ba462435b0de, type: 2}
   topic: 
-  currentTopic: {fileID: 0}
+  currentTopic: {fileID: 11400000, guid: 4272481cc7c43c94a8ab57bf6d7d63f3, type: 2}
   npcName: Mam Nandi
   greetingText: Ah, Thabo/Zanele. Come inside, child...
   greetingEmotion: warm
