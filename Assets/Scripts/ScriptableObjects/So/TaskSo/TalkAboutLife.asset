@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
-  m_Name: Task_MandlaCV 1
+  m_Name: TalkAboutLife
   m_EditorClassIdentifier: 
-  taskName: Help Mandla write and improve his CV
-  npcName: Mandla
-  topic: try_legit
-  isCompleted: 0
+  taskName: Carry Water
+  description: 
+  moneyReward: 0
+  foodReward: 0
+  stressChange: 0
+  sourceNPC: 
+  topicId: 

@@ -91,18 +91,24 @@ public class DialogueUIManager : MonoBehaviour
         }
         else
         {
+            // Topic finished
             Debug.Log("Reached end of topic.");
 
-            // 🔓 Unlock the task if present
+            // Unlock the task if there is one
             if (currentTopic.unlockTask != null)
             {
-                TaskManager.Instance.UnlockTask(currentTopic.unlockTask);
-                Debug.Log("✅ Task unlocked: " + currentTopic.unlockTask.taskName);
+                // Set the metadata so TaskManager can find it
+                GameTask task = currentTopic.unlockTask;
+                task.sourceNPC = currentDialogue.npcName;
+                task.topicId = currentTopic.id;
+
+                TaskManager.Instance.UnlockTask(task);
+                Debug.Log("✅ Task unlocked: " + task.taskName);
             }
 
-            // Hide continue button, show complete task button
+            // Hide continue button, show Complete Task button
             continueButton.gameObject.SetActive(false);
-            completeTaskButton.gameObject.SetActive(true);  // 👀 Now the player sees it!
+            completeTaskButton.gameObject.SetActive(true);
         }
     }
 
@@ -140,10 +146,13 @@ public class DialogueUIManager : MonoBehaviour
     {
         completeTaskButton.gameObject.SetActive(false);
 
-        if (currentDialogue != null && currentTopic != null)
+        // Open the Task Panel UI
+        if (taskPanel != null)
         {
-            TaskManager.Instance.CompleteTaskForNPC(currentDialogue.npcName, currentTopic.id);
-            Debug.Log("✅ Task completed for: " + currentDialogue.npcName + " | Topic: " + currentTopic.id);
+            taskPanel.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f; // Pause game while viewing tasks
         }
 
         EndDialogue();

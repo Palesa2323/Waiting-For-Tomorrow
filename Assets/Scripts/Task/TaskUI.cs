@@ -1,31 +1,28 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TaskUI : MonoBehaviour
 {
-    public GameObject taskItemPrefab;  // Assign TaskItem prefab here
-    public Transform taskListParent;   // Assign TaskListContainer here
+    [SerializeField] private TMP_Text taskNameText;
+    [SerializeField] private TMP_Text descriptionText;
+    [SerializeField] private Button completeButton;
 
-    private List<GameObject> activeTaskItems = new List<GameObject>();
+    private GameTask task;
 
-    public void UpdateTaskList(List<GameTask> tasks)
+    public void Setup(GameTask taskData)
     {
-        // Clear old task items
-        foreach (var item in activeTaskItems)
-            Destroy(item);
-        activeTaskItems.Clear();
+        task = taskData;
+        taskNameText.text = task.taskName;
+        descriptionText.text = task.description;
 
-        // Create new task items and stack vertically
-        foreach (var task in tasks)
+        completeButton.onClick.RemoveAllListeners();
+        completeButton.onClick.AddListener(() =>
         {
-            GameObject newItem = Instantiate(taskItemPrefab, taskListParent);
-            Text textComponent = newItem.GetComponent<Text>();
-            string status = task.isCompleted ? "✔️ " : "❌ ";
-            textComponent.text = status + task.taskName;
-
-            activeTaskItems.Add(newItem);
-        }
+            TaskManager.Instance.CompleteTask(task);
+            Destroy(gameObject); // remove from UI
+        });
     }
 }
 

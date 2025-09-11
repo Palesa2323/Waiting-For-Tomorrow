@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eae7c3ac5caef2c4b98675eb4986837d, type: 3}
-  m_Name: Task_MamaTalk
+  m_Name: TryLegit
   m_EditorClassIdentifier: 
-  taskName: Volunteer for the local clean-up
-  npcName: Mama Nandi
-  topic: things_get_better
-  isCompleted: 0
+  taskName: 
+  description: 
+  moneyReward: 0
+  foodReward: 0
+  stressChange: 0
+  sourceNPC: 
+  topicId: 
