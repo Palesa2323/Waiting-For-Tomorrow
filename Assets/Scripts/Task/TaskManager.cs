@@ -50,6 +50,8 @@ public class TaskManager : MonoBehaviour
         if (!string.IsNullOrEmpty(task.miniGameScene))
             UnityEngine.SceneManagement.SceneManager.LoadScene(task.miniGameScene);
     }
+   
+
 
     public bool CompleteTaskForNPC(string npcName, string topicId)
     {
