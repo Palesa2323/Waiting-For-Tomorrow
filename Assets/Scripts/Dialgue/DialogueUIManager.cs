@@ -126,8 +126,6 @@ public class DialogueUIManager : MonoBehaviour
         if (taskPanel != null)
         {
             taskPanel.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
             Time.timeScale = 0f; // Pause the game
         }
 
