@@ -5,40 +5,31 @@ using UnityEngine.UI;
 public class DialogueUIManager : MonoBehaviour
 {
     public GameObject dialoguePanel;
-    public TMP_Text speakerText;
-    public TMP_Text dialogueText;
-    public Button continueButton;
-    public Button completeTaskButton; 
-
+    public TMP_Text speakerText, dialogueText;
+    public Button continueButton, completeTaskButton;
     public Button[] optionButtons;
-    public GameObject taskPanel;  
+    public GameObject taskPanel;
 
     private NPCDialogue currentDialogue;
     private DialogueTopic currentTopic;
-    private int currentLineIndex = 0;
+    private int currentLineIndex;
 
     void Start()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-
         dialoguePanel.SetActive(false);
         continueButton.onClick.AddListener(NextLine);
 
-        completeTaskButton.gameObject.SetActive(false);  // Hide initially
+        completeTaskButton.gameObject.SetActive(false);
         completeTaskButton.onClick.AddListener(OnCompleteTaskClicked);
     }
 
     public void StartDialogue(NPCDialogue npc)
     {
-        currentDialogue = npc; // ✅ FIXED! Don't use uninitialized `dialogue` field
-        Debug.Log("Starting dialogue with NPC: " + npc.npcName);
-
+        currentDialogue = npc;
         dialoguePanel.SetActive(true);
         speakerText.text = npc.npcName;
         dialogueText.text = npc.greetingText;
 
-        // Display available topics
         for (int i = 0; i < optionButtons.Length; i++)
         {
             if (i < npc.dialogueTopics.Length)
@@ -50,10 +41,7 @@ public class DialogueUIManager : MonoBehaviour
                 optionButtons[i].onClick.RemoveAllListeners();
                 optionButtons[i].onClick.AddListener(() => StartTopic(npc.dialogueTopics[index]));
             }
-            else
-            {
-                optionButtons[i].gameObject.SetActive(false);
-            }
+            else optionButtons[i].gameObject.SetActive(false);
         }
 
         continueButton.gameObject.SetActive(false);
@@ -64,10 +52,9 @@ public class DialogueUIManager : MonoBehaviour
         currentTopic = topic;
         currentLineIndex = 0;
 
-        foreach (Button btn in optionButtons)
-            btn.gameObject.SetActive(false);
-
+        foreach (Button btn in optionButtons) btn.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(true);
+
         ShowLine();
     }
 
@@ -84,51 +71,39 @@ public class DialogueUIManager : MonoBehaviour
     void NextLine()
     {
         currentLineIndex++;
+        if (currentLineIndex < currentTopic.lines.Length) { ShowLine(); return; }
 
-        if (currentLineIndex < currentTopic.lines.Length)
+        // Unlock Task
+        if (currentTopic.unlockTask != null)
         {
-            ShowLine();
+            GameTask task = currentTopic.unlockTask;
+            task.sourceNPC = currentDialogue.npcName;
+            task.topicId = currentTopic.id;
+            TaskManager.Instance.UnlockTask(task);
         }
-        else
-        {
-            // Topic finished
-            Debug.Log("Reached end of topic.");
-
-            // Unlock the task if there is one
-            if (currentTopic.unlockTask != null)
-            {
-                // Set the metadata so TaskManager can find it
-                GameTask task = currentTopic.unlockTask;
-                task.sourceNPC = currentDialogue.npcName;
-                task.topicId = currentTopic.id;
-
-                TaskManager.Instance.UnlockTask(task);
-                Debug.Log("✅ Task unlocked: " + task.taskName);
-            }
-
-            // Hide continue button, show Complete Task button
-            continueButton.gameObject.SetActive(false);
-            completeTaskButton.gameObject.SetActive(true);
-        }
-    }
-
-
-    public void EndDialogue()
-    {
-        dialoguePanel.SetActive(false);
-        currentTopic = null;
-        currentLineIndex = 0;
-
-        // 🧾 Show task panel
         if (taskPanel != null)
         {
             taskPanel.SetActive(true);
-            Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
-            Time.timeScale = 0f; // Pause game
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f; // pause the game while showing tasks
         }
 
-        currentDialogue = null;
+
+        continueButton.gameObject.SetActive(false);
+        completeTaskButton.gameObject.SetActive(true);
+    }
+
+    void OnCompleteTaskClicked()
+    {
+        completeTaskButton.gameObject.SetActive(false);
+        if (taskPanel != null)
+        {
+            taskPanel.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f;
+        }
     }
 
     public void CloseTaskPanel()
@@ -136,25 +111,27 @@ public class DialogueUIManager : MonoBehaviour
         if (taskPanel != null)
         {
             taskPanel.SetActive(false);
-            Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
             Time.timeScale = 1f;
         }
     }
-
-    void OnCompleteTaskClicked()
+    public void EndDialogue()
     {
-        completeTaskButton.gameObject.SetActive(false);
+        dialoguePanel.SetActive(false);
+        currentTopic = null;
+        currentLineIndex = 0;
 
+        // Show task panel if needed
         if (taskPanel != null)
         {
             taskPanel.SetActive(true);
-            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            Time.timeScale = 0f; // pause game
+            Cursor.visible = true;
+            Time.timeScale = 0f; // Pause the game
         }
 
-        EndDialogue();
+        currentDialogue = null;
     }
 
 }

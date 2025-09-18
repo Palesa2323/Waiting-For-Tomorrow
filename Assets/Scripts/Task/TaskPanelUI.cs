@@ -1,23 +1,17 @@
 using UnityEngine;
-using TMPro;          // for TextMeshPro
-using UnityEngine.UI; // <-- this one is needed for Button, Image, Slider, etc.
-
+using TMPro;
+using UnityEngine.UI;
 
 public class TaskPanelUI : MonoBehaviour
 {
-    public GameObject taskItemPrefab; // prefab
-    public Transform taskListContainer; // parent container
+    public GameObject taskItemPrefab;
+    public Transform taskListContainer;
 
-    void OnEnable()
-    {
-        RefreshTaskList();
-    }
+    private void OnEnable() => RefreshTaskList();
 
     public void RefreshTaskList()
     {
-        // Clear existing items
-        foreach (Transform child in taskListContainer)
-            Destroy(child.gameObject);
+        foreach (Transform child in taskListContainer) Destroy(child.gameObject);
 
         foreach (var task in TaskManager.Instance.activeTasks)
         {
@@ -33,6 +27,7 @@ public class TaskPanelUI : MonoBehaviour
                 Debug.LogError("TaskItemPrefab child objects missing or misnamed!");
                 continue;
             }
+
             nameText.text = task.taskName;
             descText.text = task.description;
 
@@ -40,7 +35,7 @@ public class TaskPanelUI : MonoBehaviour
             completeBtn.onClick.AddListener(() =>
             {
                 TaskManager.Instance.CompleteTask(task);
-                RefreshTaskList(); // update UI
+                RefreshTaskList();
             });
         }
     }
@@ -50,6 +45,7 @@ public class TaskPanelUI : MonoBehaviour
         gameObject.SetActive(false);
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
-        Time.timeScale = 1f; // unpause
+        Time.timeScale = 1f;
     }
 }
+
