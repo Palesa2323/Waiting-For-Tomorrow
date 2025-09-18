@@ -40,6 +40,10 @@ public class DayManager : MonoBehaviour
         dayTimer = dayLength;
         UpdateDayUI();
         Debug.Log("➡️ New Day: " + currentDay);
+
+        if (DailyGoalManager.Instance != null)
+            DailyGoalManager.Instance.NextDay();
+
     }
 
     private void UpdateDayUI()
@@ -47,6 +51,7 @@ public class DayManager : MonoBehaviour
         if (dayText != null)
             dayText.text = "Day " + currentDay;
     }
+
 
     // Optional: manually advance day
     public void AdvanceDay() => dayTimer = 0f;

@@ -50,7 +50,7 @@ public class DailyGoalManager : MonoBehaviour
         }
 
         if (rewardText != null)
-            rewardText.text = "Reward: R" + rewardAmount;
+            rewardText.text = "R" + rewardAmount;
     }
 
     // Call this when player completes the goal
