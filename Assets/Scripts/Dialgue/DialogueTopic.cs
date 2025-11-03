@@ -6,6 +6,6 @@ public class DialogueTopic : ScriptableObject
     public string id;
     public string playerChoiceText;
     public DialogueLine[] lines;
-    public GameTask unlockTask;
+    public TaskData unlockTask;
 }
 

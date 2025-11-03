@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 
 public class TaskManagement : MonoBehaviour
 {
@@ -15,61 +16,69 @@ public class TaskManagement : MonoBehaviour
     public Button acceptButton;
     public Button declineButton;
 
-    private TaskData currentTask; // Store the task being processed
+    private TaskData currentTask;
+
+    private void Start()
+    {
+        if (acceptButton != null) acceptButton.onClick.AddListener(AcceptTask);
+        if (declineButton != null) declineButton.onClick.AddListener(DeclineTask);
+
+        if (taskPanel != null) taskPanel.SetActive(false);
+    }
 
     public void ShowTaskPanel(TaskData task)
     {
-        if (GameManager.Instance.currentDay > GameManager.Instance.maxDays) return; // Don't show if game is over
+        currentTask = task;
 
-        currentTask = task; // Store the passed-in task
-        taskPanel.SetActive(true);
+        if (taskPanel != null)
+        {
+            taskPanel.SetActive(true);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f;
 
-        // Populate UI with data from the ScriptableObject
-        taskNameText.text = task.taskName;
-        taskDescText.text = task.taskDescription;
+            if (taskNameText != null) taskNameText.text = task.taskName;
+            if (taskDescText != null) taskDescText.text = task.taskDescription;
 
-        // Set up button listeners dynamically
-        acceptButton.onClick.RemoveAllListeners(); // Clear old listeners
-        declineButton.onClick.RemoveAllListeners();
-
-        acceptButton.onClick.AddListener(AcceptTask);
-        declineButton.onClick.AddListener(DeclineTask);
+            Debug.Log($"Task Panel opened for: {task.taskName}");
+        }
+        else Debug.LogError("Task Panel not assigned in TaskManagement!");
     }
 
-    // --- BUTTON ACTIONS ---
+    public void UnlockTask(TaskData task)
+    {
+        ShowTaskPanel(task);
+    }
 
     private void AcceptTask()
     {
         taskPanel.SetActive(false);
 
-        // 1. Apply Rewards/Consequences
         GameManager.Instance.money += currentTask.moneyReward;
         GameManager.Instance.happiness += currentTask.happinessReward;
         GameManager.Instance.stress += currentTask.stressChange;
 
-        // 2. Load Mini-Game or Advance Day
+        Time.timeScale = 1f;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         if (currentTask.requiresMiniGame)
-        {
-            // Load the mini-game scene for the task
             SceneManager.LoadScene(currentTask.miniGameSceneName);
-        }
         else
-        {
-            // Task is instant (like 'Rest' or 'Talk'), advance the day after completion
             GameManager.Instance.NextDay();
-        }
-        // *The reward for a mini-game task will be applied upon exiting the mini-game scene.*
     }
 
     private void DeclineTask()
     {
         taskPanel.SetActive(false);
 
-        // Apply Penalties (The Goal is to increase stress and decrease happiness)
         GameManager.Instance.stress += currentTask.declineStressIncrease;
         GameManager.Instance.happiness += currentTask.declineHappinessPenalty;
 
-        // Advance the day immediately after declining a task
+        Time.timeScale = 1f;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         GameManager.Instance.NextDay();
     }
 }

@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\taskscenesidehustle\\sidehustlemananger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\taskscenesidehustle\\sidehustlemananger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\TaskData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\NewTaskFolder\\TaskData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\gamemanager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\newtaskfolder\\scripts\\taskmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newtaskfolder\\scripts\\taskmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\newtaskfolder\\scripts\\taskdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newtaskfolder\\scripts\\taskdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\npcdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\npcdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\dialoguetopic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\dialoguetopic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,31 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TaskManagement.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\GameManager\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager\\GameManager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\GameManager\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager\\GameManager.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAuwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T12:46:38.18Z",
+              "WhenOpened": "2025-11-03T14:25:55.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SideHustleMananger.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\TaskSceneSideHustle\\SideHustleMananger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TaskSceneSideHustle\\SideHustleMananger.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\TaskSceneSideHustle\\SideHustleMananger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TaskSceneSideHustle\\SideHustleMananger.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAgwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:23:45.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DialogueTopic.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueTopic.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\DialogueTopic.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueTopic.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialgue\\DialogueTopic.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:05:15.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NPCDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T14:04:52.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TaskData.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskData.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T13:14:23.337Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TaskData.cs",
-              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\TaskData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\TaskData.cs",
-              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\TaskData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\NewTaskFolder\\TaskData.cs",
+              "Title": "DialogueUIManager.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAwwIIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T12:35:07.599Z"
+              "WhenOpened": "2025-11-03T13:01:48.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "NPCTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T12:55:50.46Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TaskManagement.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-03T12:46:38.18Z",
+              "EditorCaption": ""
             }
           ]
         }

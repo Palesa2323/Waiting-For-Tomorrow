@@ -3,7 +3,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New NPC Dialogue", menuName = "Dialogue/NPC")]
 public class NPCDialogue : ScriptableObject
 {
-    public GameTask unlockTask;
+    public TaskData unlockTask;
     public string topic;
     public DialogueTopic currentTopic;
 

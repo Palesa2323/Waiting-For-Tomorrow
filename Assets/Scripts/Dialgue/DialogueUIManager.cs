@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using TMPro;
+﻿using TMPro;
+using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueUIManager : MonoBehaviour
@@ -13,23 +14,40 @@ public class DialogueUIManager : MonoBehaviour
     private NPCDialogue currentDialogue;
     private DialogueTopic currentTopic;
     private int currentLineIndex;
+    public TaskData unlockTask; // always use TaskData
 
-    void Start()
+
+
+    public delegate void DialogueCompletionCallback();
+    private DialogueCompletionCallback onDialogueEnd;
+
+    private void Start()
     {
-        dialoguePanel.SetActive(false);
-        continueButton.onClick.AddListener(NextLine);
+        // Assign button callbacks once
+        if (continueButton != null) continueButton.onClick.AddListener(NextLine);
+        if (completeTaskButton != null) completeTaskButton.onClick.AddListener(OnCompleteTaskClicked);
 
-        completeTaskButton.gameObject.SetActive(false);
-        completeTaskButton.onClick.AddListener(OnCompleteTaskClicked);
+        // Hide panels at start
+        dialoguePanel.SetActive(false);
+        if (taskPanel != null) taskPanel.SetActive(false);
     }
 
-    public void StartDialogue(NPCDialogue npc)
+    public void StartDialogue(NPCDialogue npc, DialogueCompletionCallback callback = null)
     {
         currentDialogue = npc;
+        onDialogueEnd = callback;
+
+        // Show dialogue panel
         dialoguePanel.SetActive(true);
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0f; // pause game
+
+        // Set greeting
         speakerText.text = npc.npcName;
         dialogueText.text = npc.greetingText;
 
+        // Setup choice buttons
         for (int i = 0; i < optionButtons.Length; i++)
         {
             if (i < npc.dialogueTopics.Length)
@@ -45,6 +63,7 @@ public class DialogueUIManager : MonoBehaviour
         }
 
         continueButton.gameObject.SetActive(false);
+        completeTaskButton.gameObject.SetActive(false);
     }
 
     void StartTopic(DialogueTopic topic)
@@ -71,24 +90,19 @@ public class DialogueUIManager : MonoBehaviour
     void NextLine()
     {
         currentLineIndex++;
-        if (currentLineIndex < currentTopic.lines.Length) { ShowLine(); return; }
+        if (currentLineIndex < currentTopic.lines.Length)
+        {
+            ShowLine();
+            return;
+        }
 
-        // Unlock Task
+        // Unlock Task if there is one
         if (currentTopic.unlockTask != null)
         {
-            GameTask task = currentTopic.unlockTask;
-            task.sourceNPC = currentDialogue.npcName;
-            task.topicId = currentTopic.id;
-            TaskManager.Instance.UnlockTask(task);
-        }
-        if (taskPanel != null)
-        {
-            taskPanel.SetActive(true);
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            Time.timeScale = 0f; // pause the game while showing tasks
-        }
+            TaskData task = currentTopic.unlockTask;
 
+             TaskManagement.Instance.UnlockTask(currentTopic.unlockTask); 
+        }
 
         continueButton.gameObject.SetActive(false);
         completeTaskButton.gameObject.SetActive(true);
@@ -97,13 +111,17 @@ public class DialogueUIManager : MonoBehaviour
     void OnCompleteTaskClicked()
     {
         completeTaskButton.gameObject.SetActive(false);
-        if (taskPanel != null)
-        {
-            taskPanel.SetActive(true);
-            Cursor.visible = true;
-            Cursor.lockState = CursorLockMode.None;
-            Time.timeScale = 0f;
-        }
+        dialoguePanel.SetActive(false);
+
+        // Restore cursor & time before switching scene
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 1f;
+
+        // Pass info about which task to complete
+        GameManager.Instance.currentTask = currentTopic.unlockTask; // store TaskData somewhere global
+
+        SceneManager.LoadScene("TaskScene"); // load the task scene
     }
 
     public void CloseTaskPanel()
@@ -116,20 +134,24 @@ public class DialogueUIManager : MonoBehaviour
             Time.timeScale = 1f;
         }
     }
+
     public void EndDialogue()
     {
         dialoguePanel.SetActive(false);
         currentTopic = null;
         currentLineIndex = 0;
 
-        // Show task panel if needed
-        if (taskPanel != null)
+        if (onDialogueEnd != null)
         {
-            taskPanel.SetActive(true);
-            Time.timeScale = 0f; // Pause the game
+            onDialogueEnd.Invoke();
+            onDialogueEnd = null;
         }
 
         currentDialogue = null;
-    }
 
+        // Ensure cursor & time are restored
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1f;
+    }
 }
