@@ -65,7 +65,6 @@ public class DialogueUIManager : MonoBehaviour
         continueButton.gameObject.SetActive(false);
         completeTaskButton.gameObject.SetActive(false);
     }
-
     void StartTopic(DialogueTopic topic)
     {
         currentTopic = topic;
@@ -74,8 +73,15 @@ public class DialogueUIManager : MonoBehaviour
         foreach (Button btn in optionButtons) btn.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(true);
 
+        // Assign task linked to this topic
+        if (topic.unlockTask != null)
+        {
+            GameManager.Instance.currentTask = topic.unlockTask;
+        }
+
         ShowLine();
     }
+
 
     void ShowLine()
     {
@@ -89,6 +95,18 @@ public class DialogueUIManager : MonoBehaviour
 
     void NextLine()
     {
+        if (currentTopic == null)
+        {
+            Debug.LogWarning("NextLine called but currentTopic is null!");
+            return;
+        }
+
+        if (currentTopic.lines == null || currentTopic.lines.Length == 0)
+        {
+            Debug.LogWarning("NextLine called but currentTopic.lines is null or empty!");
+            return;
+        }
+
         currentLineIndex++;
         if (currentLineIndex < currentTopic.lines.Length)
         {
@@ -99,9 +117,14 @@ public class DialogueUIManager : MonoBehaviour
         // Unlock Task if there is one
         if (currentTopic.unlockTask != null)
         {
-            TaskData task = currentTopic.unlockTask;
-
-             TaskManagement.Instance.UnlockTask(currentTopic.unlockTask); 
+            if (TaskManagement.Instance != null)
+            {
+                TaskManagement.Instance.UnlockTask(currentTopic.unlockTask);
+            }
+            else
+            {
+                Debug.LogWarning("TaskManagement.Instance is null! Make sure TaskManagement exists in scene.");
+            }
         }
 
         continueButton.gameObject.SetActive(false);
@@ -110,19 +133,16 @@ public class DialogueUIManager : MonoBehaviour
 
     void OnCompleteTaskClicked()
     {
-        completeTaskButton.gameObject.SetActive(false);
-        dialoguePanel.SetActive(false);
-
-        // Restore cursor & time before switching scene
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-        Time.timeScale = 1f;
-
-        // Pass info about which task to complete
-        GameManager.Instance.currentTask = currentTopic.unlockTask; // store TaskData somewhere global
-
-        SceneManager.LoadScene("TaskScene"); // load the task scene
+        if (GameManager.Instance.currentTask != null)
+        {
+            SceneManager.LoadScene("TaskScene");
+        }
+        else
+        {
+            Debug.LogWarning("No task assigned!");
+        }
     }
+
 
     public void CloseTaskPanel()
     {

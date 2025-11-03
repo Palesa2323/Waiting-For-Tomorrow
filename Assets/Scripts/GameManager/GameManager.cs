@@ -31,9 +31,10 @@ public class GameManager : MonoBehaviour
     [Header("Game State")]
     public string loseSceneName = "LoseScene";
 
-    // <<< ADD THIS VARIABLE >>>
+  
     [HideInInspector]
-    public TaskData currentTask; // stores the task the player is currently doing
+    public TaskData currentTask; // currently active task
+
 
     void Update()
     {
@@ -73,6 +74,8 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+ 
 
 
     public bool IsGameOver()

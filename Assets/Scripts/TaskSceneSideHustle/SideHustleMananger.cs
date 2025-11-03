@@ -1,12 +1,12 @@
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class SideHustleManager : MonoBehaviour
 {
-    public TMP_Text taskNameText;
-    public TMP_Text taskDescText;
+    public TMP_Text nameText;
+    public TMP_Text descriptionText;
     public Button acceptButton;
     public Button declineButton;
 
@@ -16,60 +16,59 @@ public class SideHustleManager : MonoBehaviour
     {
         currentTask = GameManager.Instance.currentTask;
 
-        if (currentTask != null)
+        if (currentTask == null)
         {
-            taskNameText.text = currentTask.taskName;
-            taskDescText.text = currentTask.taskDescription;
-        }
-        else
-        {
-            taskNameText.text = "No Task";
-            taskDescText.text = "Nothing to do!";
+            Debug.LogError("No task assigned! Returning to GameScene.");
+            SceneManager.LoadScene("GameScene");
+            return;
         }
 
+        // Set UI
+        nameText.text = currentTask.taskName;
+        descriptionText.text = currentTask.taskDescription;
+
+        // Button listeners
+        acceptButton.onClick.AddListener(AcceptTask);
+        declineButton.onClick.AddListener(DeclineTask);
+
+        // Enable cursor
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f;
-
-        acceptButton.onClick.AddListener(AcceptTask);
-        declineButton.onClick.AddListener(DeclineTask);
     }
 
     void AcceptTask()
     {
-        if (currentTask != null)
+        GameManager.Instance.money += currentTask.moneyReward;
+        GameManager.Instance.happiness += currentTask.happinessReward;
+        GameManager.Instance.stress += currentTask.stressChange;
+
+        // If mini-game exists
+        if (currentTask.requiresMiniGame)
         {
-            GameManager.Instance.money += currentTask.moneyReward;
-            GameManager.Instance.happiness += currentTask.happinessReward;
-            GameManager.Instance.stress += currentTask.stressChange;
-
-            Debug.Log($"Accepted task: {currentTask.taskName}");
+            SceneManager.LoadScene(currentTask.miniGameSceneName);
         }
-
-        EndTask();
+        else
+        {
+            ReturnToGameScene();
+        }
     }
 
     void DeclineTask()
     {
-        if (currentTask != null)
-        {
-            GameManager.Instance.stress += currentTask.declineStressIncrease;
-            GameManager.Instance.happiness -= currentTask.declineHappinessPenalty;
+        GameManager.Instance.happiness -= currentTask.declineHappinessPenalty;
+        GameManager.Instance.stress += currentTask.declineStressIncrease;
 
-            Debug.Log($"Declined task: {currentTask.taskName}");
-        }
-
-        EndTask();
+        ReturnToGameScene();
     }
 
-    void EndTask()
+    void ReturnToGameScene()
     {
         GameManager.Instance.currentTask = null;
-
         Time.timeScale = 1f;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
 
-        SceneManager.LoadScene("GameScene"); // return to main scene
+        SceneManager.LoadScene("GameScene");
     }
 }

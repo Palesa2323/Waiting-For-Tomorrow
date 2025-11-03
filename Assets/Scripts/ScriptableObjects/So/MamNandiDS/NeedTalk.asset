@@ -27,4 +27,4 @@ MonoBehaviour:
   - speaker: Mama Nandi
     text: "Then you scream at the sky until it listens. You\u2019re allowed to be
       tired, child. But not to give up."
-  unlockTask: {fileID: 11400000, guid: d73ee1d5c2a9d754986aeb2fc28fe387, type: 2}
+  unlockTask: {fileID: 11400000, guid: 1c51858b8a3361c418e9292edc252ea8, type: 2}

@@ -27,4 +27,4 @@ MonoBehaviour:
     text: You really believe that?
   - speaker: Mama Nandi
     text: "If I didn\u2019t believe, I\u2019d have stopped cooking a long time ago."
-  unlockTask: {fileID: 11400000, guid: 6b5dd466b5d811140a27e2a23eff9aa7, type: 2}
+  unlockTask: {fileID: 11400000, guid: fed86eff5320f2f4a975d6563d0f8ce6, type: 2}
