@@ -5,19 +5,31 @@ using UnityEngine.UI;
 
 public class DialogueUIManager : MonoBehaviour
 {
+    // ----------------------------------------------------------------------
+    // 1. UI References and Variables
+    // ----------------------------------------------------------------------
     public GameObject dialoguePanel;
     public TMP_Text speakerText, dialogueText;
-    public Button continueButton, completeTaskButton;
+    public Button continueButton;
+
+    // We remove completeTaskButton as its function is replaced by the Task Panel buttons
+    // public Button completeTaskButton; 
+
     public Button[] optionButtons;
+
+    // Task Panel reference is still needed if you want to control its visibility *directly*
     public GameObject taskPanel;
 
     private NPCDialogue currentDialogue;
     private DialogueTopic currentTopic;
     private int currentLineIndex;
-    public TaskData unlockTask; // always use TaskData
 
+    // We rely on the TaskManagement script for the actual task data storage/passing.
+    // public TaskData unlockTask; // <-- DELETED: TaskData is now passed/stored via TaskManagement.
 
-
+    // ----------------------------------------------------------------------
+    // 2. Callbacks and Startup
+    // ----------------------------------------------------------------------
     public delegate void DialogueCompletionCallback();
     private DialogueCompletionCallback onDialogueEnd;
 
@@ -25,23 +37,31 @@ public class DialogueUIManager : MonoBehaviour
     {
         // Assign button callbacks once
         if (continueButton != null) continueButton.onClick.AddListener(NextLine);
-        if (completeTaskButton != null) completeTaskButton.onClick.AddListener(OnCompleteTaskClicked);
+
+        // No need to assign OnCompleteTaskClicked listener if the button is removed/unused.
+        // if (completeTaskButton != null) completeTaskButton.onClick.AddListener(OnCompleteTaskClicked); 
 
         // Hide panels at start
         dialoguePanel.SetActive(false);
         if (taskPanel != null) taskPanel.SetActive(false);
     }
 
+    // A flag to check if dialogue is currently running (useful for NPCTrigger)
+    public bool IsDialogueActive() => dialoguePanel.activeInHierarchy;
+
+    // ----------------------------------------------------------------------
+    // 3. Dialogue Initialization
+    // ----------------------------------------------------------------------
     public void StartDialogue(NPCDialogue npc, DialogueCompletionCallback callback = null)
     {
         currentDialogue = npc;
         onDialogueEnd = callback;
 
-        // Show dialogue panel
+        // Show dialogue panel and pause the game
         dialoguePanel.SetActive(true);
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
-        Time.timeScale = 0f; // pause game
+        Time.timeScale = 0f;
 
         // Set greeting
         speakerText.text = npc.npcName;
@@ -63,8 +83,9 @@ public class DialogueUIManager : MonoBehaviour
         }
 
         continueButton.gameObject.SetActive(false);
-        completeTaskButton.gameObject.SetActive(false);
+        // completeTaskButton.gameObject.SetActive(false); // Removed button reference
     }
+
     void StartTopic(DialogueTopic topic)
     {
         currentTopic = topic;
@@ -73,19 +94,16 @@ public class DialogueUIManager : MonoBehaviour
         foreach (Button btn in optionButtons) btn.gameObject.SetActive(false);
         continueButton.gameObject.SetActive(true);
 
-        // Assign task linked to this topic
-        if (topic.unlockTask != null)
-        {
-            GameManager.Instance.currentTask = topic.unlockTask;
-        }
+        // This line was wrong: GameManager.Instance.currentTask = topic.unlockTask;
+        // The task is passed to TaskManagement *only* when the dialogue finishes (in NextLine).
+        // No action is needed here, as the task is stored in the topic itself.
 
         ShowLine();
     }
 
-
     void ShowLine()
     {
-        if (currentLineIndex < currentTopic.lines.Length)
+        if (currentTopic != null && currentLineIndex < currentTopic.lines.Length)
         {
             DialogueLine line = currentTopic.lines[currentLineIndex];
             speakerText.text = line.speaker;
@@ -93,17 +111,16 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
 
+    // ----------------------------------------------------------------------
+    // 4. Core Progression Logic
+    // ----------------------------------------------------------------------
     void NextLine()
     {
-        if (currentTopic == null)
+        // --- Safety Checks ---
+        if (currentTopic == null || currentTopic.lines == null || currentTopic.lines.Length == 0)
         {
-            Debug.LogWarning("NextLine called but currentTopic is null!");
-            return;
-        }
-
-        if (currentTopic.lines == null || currentTopic.lines.Length == 0)
-        {
-            Debug.LogWarning("NextLine called but currentTopic.lines is null or empty!");
+            Debug.LogWarning("NextLine called but currentTopic is invalid!");
+            EndDialogue(); // Force close if something is wrong
             return;
         }
 
@@ -111,49 +128,37 @@ public class DialogueUIManager : MonoBehaviour
         if (currentLineIndex < currentTopic.lines.Length)
         {
             ShowLine();
-            return;
+            return; // Continue dialogue lines
         }
 
-        // Unlock Task if there is one
+        // --- END OF DIALOGUE LINES REACHED ---
+
+        // 1. Trigger Task Panel if a task exists
         if (currentTopic.unlockTask != null)
         {
             if (TaskManagement.Instance != null)
             {
+                // TaskManagement handles the UI (pausing, showing the panel, setting Time.timeScale=0)
                 TaskManagement.Instance.UnlockTask(currentTopic.unlockTask);
             }
             else
             {
-                Debug.LogWarning("TaskManagement.Instance is null! Make sure TaskManagement exists in scene.");
+                Debug.LogWarning("TaskManagement.Instance is null! Cannot show task panel. Calling EndDialogue.");
+                EndDialogue();
             }
-        }
-
-        continueButton.gameObject.SetActive(false);
-        completeTaskButton.gameObject.SetActive(true);
-    }
-
-    void OnCompleteTaskClicked()
-    {
-        if (GameManager.Instance.currentTask != null)
-        {
-            SceneManager.LoadScene("TaskScene");
         }
         else
         {
-            Debug.LogWarning("No task assigned!");
+            // No task to unlock, just end the conversation
+            EndDialogue();
         }
+
+        // We do not need to set the continueButton to false here, 
+        // as EndDialogue() or TaskManagement.UnlockTask() will cover the state change.
     }
 
-
-    public void CloseTaskPanel()
-    {
-        if (taskPanel != null)
-        {
-            taskPanel.SetActive(false);
-            Cursor.visible = false;
-            Cursor.lockState = CursorLockMode.Locked;
-            Time.timeScale = 1f;
-        }
-    }
+    // This function is now entirely redundant and should not be used in the final build.
+    // private void OnCompleteTaskClicked() { } 
 
     public void EndDialogue()
     {
@@ -161,6 +166,7 @@ public class DialogueUIManager : MonoBehaviour
         currentTopic = null;
         currentLineIndex = 0;
 
+        // 1. Invoke the callback provided by the NPCTrigger
         if (onDialogueEnd != null)
         {
             onDialogueEnd.Invoke();
@@ -169,7 +175,19 @@ public class DialogueUIManager : MonoBehaviour
 
         currentDialogue = null;
 
-        // Ensure cursor & time are restored
+        // 2. Ensure cursor & time are restored ONLY if the Task Panel IS NOT active.
+        // If the Task Panel is open, it should control time/cursor state.
+        if (TaskManagement.Instance == null || !TaskManagement.Instance.taskPanel.activeInHierarchy)
+        {
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+            Time.timeScale = 1f;
+        }
+    }
+
+    // This function is useful if the Task Panel wants the Dialogue Manager to handle restoration.
+    public void RestorePlayerControl()
+    {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;

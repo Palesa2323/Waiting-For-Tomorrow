@@ -9,8 +9,8 @@ public class TaskManagement : MonoBehaviour
 
     private void Awake()
     {
-        // Singleton setup
-        if (Instance == null)
+        // Singleton setup
+        if (Instance == null)
             Instance = this;
         else
             Destroy(gameObject);
@@ -25,7 +25,7 @@ public class TaskManagement : MonoBehaviour
 
     [HideInInspector] public TaskData currentTask; // ScriptableObject task
 
-    private void Start()
+    private void Start()
     {
         if (acceptButton != null)
             acceptButton.onClick.AddListener(AcceptTask);
@@ -37,8 +37,8 @@ public class TaskManagement : MonoBehaviour
             taskPanel.SetActive(false);
     }
 
-    // Show the task panel with task details
-    public void ShowTaskPanel(TaskData task)
+    // Show the task panel with task details
+    public void ShowTaskPanel(TaskData task)
     {
         if (task == null)
         {
@@ -56,7 +56,7 @@ public class TaskManagement : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Time.timeScale = 0f; // pause game
 
-            if (taskNameText != null)
+            if (taskNameText != null)
                 taskNameText.text = task.taskName;
 
             if (taskDescText != null)
@@ -70,8 +70,8 @@ public class TaskManagement : MonoBehaviour
         }
     }
 
-    // Shortcut for dialogue system
-    public void UnlockTask(TaskData task)
+    // Shortcut for dialogue system
+    public void UnlockTask(TaskData task)
     {
         ShowTaskPanel(task);
     }
@@ -86,26 +86,26 @@ public class TaskManagement : MonoBehaviour
 
         taskPanel.SetActive(false);
 
-        // Apply rewards
-        GameManager.Instance.money += currentTask.moneyReward;
+        // Apply rewards
+        GameManager.Instance.money += currentTask.moneyReward;
         GameManager.Instance.happiness += currentTask.happinessReward;
         GameManager.Instance.stress += currentTask.stressChange;
 
         ResetTimeAndCursor();
 
-        // Load mini-game if needed
-        if (currentTask.requiresMiniGame && !string.IsNullOrEmpty(currentTask.miniGameSceneName))
+        // Load mini-game if needed
+        if (currentTask.requiresMiniGame && !string.IsNullOrEmpty(currentTask.miniGameSceneName))
         {
             SceneManager.LoadScene(currentTask.miniGameSceneName);
         }
         else
         {
-            // No mini-game → just advance day
-            GameManager.Instance.NextDay();
+            // No mini-game → just advance day
+            GameManager.Instance.NextDay();
         }
 
-        // Clear task
-        currentTask = null;
+        // Clear task
+        currentTask = null;
     }
 
     private void DeclineTask()
@@ -118,16 +118,16 @@ public class TaskManagement : MonoBehaviour
 
         taskPanel.SetActive(false);
 
-        // Apply penalties
-        GameManager.Instance.stress += currentTask.declineStressIncrease;
+        // Apply penalties
+        GameManager.Instance.stress += currentTask.declineStressIncrease;
         GameManager.Instance.happiness += currentTask.declineHappinessPenalty;
 
         ResetTimeAndCursor();
 
         GameManager.Instance.NextDay();
 
-        // Clear task
-        currentTask = null;
+        // Clear task
+        currentTask = null;
     }
 
     private void ResetTimeAndCursor()
