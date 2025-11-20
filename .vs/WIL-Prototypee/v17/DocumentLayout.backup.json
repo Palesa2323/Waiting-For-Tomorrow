@@ -3,19 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\newtaskfolder\\scripts\\taskmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newtaskfolder\\scripts\\taskmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\player\\thirdpersoncamer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\player\\thirdpersoncamer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\thirdpersoncamer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,11 +58,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "CarAI.cs",
+              "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\CarAI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CarAI.cs",
+              "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\CarAI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CarAI.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAIwCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-20T14:56:48.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "playerMovement.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\player\\playerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\player\\playerMovement.cs",
@@ -66,12 +83,11 @@
               "RelativeToolTip": "Assets\\Scripts\\player\\playerMovement.cs",
               "ViewState": "AgIAADsAAAAAAAAAAAAjwEwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:53:18.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T12:53:18.29Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ThirdPersonCamer.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\player\\ThirdPersonCamer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\player\\ThirdPersonCamer.cs",
@@ -79,8 +95,7 @@
               "RelativeToolTip": "Assets\\Scripts\\player\\ThirdPersonCamer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:53:15.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-19T12:53:15.152Z"
             },
             {
               "$type": "Document",
@@ -90,14 +105,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
               "RelativeToolTip": "Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAswCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T12:55:50.46Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "TaskManagement.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
@@ -105,12 +120,11 @@
               "RelativeToolTip": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
               "ViewState": "AgIAAHwAAAAAAAAAAAAswIsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T12:46:38.18Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-03T12:46:38.18Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\GameManager\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager\\GameManager.cs",
@@ -122,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "DialogueUIManager.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
@@ -134,7 +148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "DialogueTopic.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueTopic.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\DialogueTopic.cs",
@@ -146,7 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TaskDataBase.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskDataBase.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskDataBase.cs",
@@ -158,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "GrassSpawner.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Material\\GrassSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Material\\GrassSpawner.cs",
@@ -170,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "NPCDialogue.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\NPCDialogue.cs",
@@ -182,7 +196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TaskData.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskData.cs",
