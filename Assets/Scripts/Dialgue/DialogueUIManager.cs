@@ -5,9 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueUIManager : MonoBehaviour
 {
-    // ----------------------------------------------------------------------
-    // 1. UI References and Variables
-    // ----------------------------------------------------------------------
+
     public GameObject dialoguePanel;
     public TMP_Text speakerText, dialogueText;
     public Button continueButton;
@@ -114,7 +112,7 @@ public class DialogueUIManager : MonoBehaviour
     // ----------------------------------------------------------------------
     // 4. Core Progression Logic
     // ----------------------------------------------------------------------
-    void NextLine()
+    public void NextLine()
     {
         // --- Safety Checks ---
         if (currentTopic == null || currentTopic.lines == null || currentTopic.lines.Length == 0)

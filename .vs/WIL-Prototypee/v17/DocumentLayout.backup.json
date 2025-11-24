@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\player\\thirdpersoncamer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\thirdpersoncamer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,20 +31,8 @@
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\carai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\npctrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\newtaskfolder\\scripts\\taskmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\newtaskfolder\\scripts\\taskmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\player\\thirdpersoncamer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\thirdpersoncamer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialgue\\dialogueuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\gamemanager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,11 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "IInteractable.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\player\\IInteractable.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\player\\IInteractable.cs",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Lit.shader",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal\\Shaders\\Lit.shader",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "CarAI.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\CarAI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CarAI.cs",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "playerMovement.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\player\\playerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\player\\playerMovement.cs",
@@ -119,7 +119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "ThirdPersonCamer.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\player\\ThirdPersonCamer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\player\\ThirdPersonCamer.cs",
@@ -127,23 +127,25 @@
               "RelativeToolTip": "Assets\\Scripts\\player\\ThirdPersonCamer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-19T12:53:15.152Z"
+              "WhenOpened": "2025-11-19T12:53:15.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "NPCTrigger.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
               "RelativeToolTip": "Assets\\Scripts\\Dialgue\\NPCTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T12:55:50.46Z"
+              "WhenOpened": "2025-11-03T12:55:50.46Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "TaskManagement.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\NewTaskFolder\\Scripts\\TaskManagement.cs",
@@ -167,15 +169,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "DialogueUIManager.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\Dialgue\\DialogueUIManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAIwHIAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-03T13:01:48.847Z"
+              "WhenOpened": "2025-11-03T13:01:48.847Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
