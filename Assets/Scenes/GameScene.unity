@@ -882,7 +882,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 82260533}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1592451880}
+        m_TargetAssemblyTypeName: DialogueUIManager, Assembly-CSharp
+        m_MethodName: ShowTaskPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &82260533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7577,7 +7589,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 545145416}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1592451880}
+        m_TargetAssemblyTypeName: DialogueUIManager, Assembly-CSharp
+        m_MethodName: NextLine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &545145416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18815,11 +18839,12 @@ MonoBehaviour:
   speakerText: {fileID: 1772871934}
   dialogueText: {fileID: 2085329591}
   continueButton: {fileID: 545145415}
+  taskPanel: {fileID: 82260530}
+  completionButton: {fileID: 0}
   optionButtons:
   - {fileID: 627235025}
   - {fileID: 424699138}
   - {fileID: 2027428913}
-  taskPanel: {fileID: 0}
 --- !u!4 &1592451881
 Transform:
   m_ObjectHideFlags: 0
