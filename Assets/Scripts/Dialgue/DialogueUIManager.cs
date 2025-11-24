@@ -9,31 +9,21 @@ public class DialogueUIManager : MonoBehaviour
     public GameObject dialoguePanel;
     public TMP_Text speakerText, dialogueText;
     public Button continueButton;
-
-    // We remove completeTaskButton as its function is replaced by the Task Panel buttons
-    // public Button completeTaskButton; 
+    public GameObject taskPanel;  
+    public Button completionButton; 
 
     public Button[] optionButtons;
-
-    // Task Panel reference is still needed if you want to control its visibility *directly*
-    public GameObject taskPanel;
 
     private NPCDialogue currentDialogue;
     private DialogueTopic currentTopic;
     private int currentLineIndex;
 
-    // We rely on the TaskManagement script for the actual task data storage/passing.
-    // public TaskData unlockTask; // <-- DELETED: TaskData is now passed/stored via TaskManagement.
-
-    // ----------------------------------------------------------------------
-    // 2. Callbacks and Startup
-    // ----------------------------------------------------------------------
     public delegate void DialogueCompletionCallback();
     private DialogueCompletionCallback onDialogueEnd;
 
     private void Start()
     {
-        // Assign button callbacks once
+ 
         if (continueButton != null) continueButton.onClick.AddListener(NextLine);
 
         // No need to assign OnCompleteTaskClicked listener if the button is removed/unused.
@@ -46,10 +36,6 @@ public class DialogueUIManager : MonoBehaviour
 
     // A flag to check if dialogue is currently running (useful for NPCTrigger)
     public bool IsDialogueActive() => dialoguePanel.activeInHierarchy;
-
-    // ----------------------------------------------------------------------
-    // 3. Dialogue Initialization
-    // ----------------------------------------------------------------------
     public void StartDialogue(NPCDialogue npc, DialogueCompletionCallback callback = null)
     {
         currentDialogue = npc;
@@ -109,9 +95,7 @@ public class DialogueUIManager : MonoBehaviour
         }
     }
 
-    // ----------------------------------------------------------------------
-    // 4. Core Progression Logic
-    // ----------------------------------------------------------------------
+
     public void NextLine()
     {
         // --- Safety Checks ---
@@ -129,9 +113,6 @@ public class DialogueUIManager : MonoBehaviour
             return; // Continue dialogue lines
         }
 
-        // --- END OF DIALOGUE LINES REACHED ---
-
-        // 1. Trigger Task Panel if a task exists
         if (currentTopic.unlockTask != null)
         {
             if (TaskManagement.Instance != null)
@@ -154,9 +135,21 @@ public class DialogueUIManager : MonoBehaviour
         // We do not need to set the continueButton to false here, 
         // as EndDialogue() or TaskManagement.UnlockTask() will cover the state change.
     }
+    public void ShowTaskPanel()
+    {
+        // Hide the completion BUTTON after pressing
+        if (completionButton != null)
+            completionButton.gameObject.SetActive(false);
 
-    // This function is now entirely redundant and should not be used in the final build.
-    // private void OnCompleteTaskClicked() { } 
+        // Show the Task panel
+        if (taskPanel != null)
+            taskPanel.SetActive(true);
+
+        // Keep UI mode (cursor free)
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+        Time.timeScale = 0f;
+    }
 
     public void EndDialogue()
     {
