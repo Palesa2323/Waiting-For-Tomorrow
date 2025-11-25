@@ -13,13 +13,27 @@ MonoBehaviour:
   m_Name: why_bother
   m_EditorClassIdentifier: 
   id: 
-  playerChoiceText: 'Why do you even bother? '
+  playerChoiceText: why do you even bother
   lines:
   - speaker: Nomsa
     text: " Because someone has to. We can\u2019t just sit and wait forever."
   - speaker: Player
     text: " But it\u2019s exhausting, isn\u2019t it?"
   - speaker: Nomsa
-    text: "Of course. But change doesn\u2019t happen when you\u2019re comfortable.
-      It happens when you\u2019re tired and still stand up anyway."
-  unlockTask: {fileID: 11400000, guid: a5e3544b2914244438946fdf6c5965aa, type: 2}
+    text: Of course, you should join plus your focus is shot. I need someone to dedicate
+      a full day to tutoring our students.
+  - speaker: Player
+    text: "A full day\u2026 without money? This is tough."
+  - speaker: Nomsa
+    text: They need your attention, and you need a reminder of purpose and yes it
+      t will take effort, but your stress will drop immensely
+  - speaker: Player
+    text: "But I can\u2019t keep falling apart mentally.Helping them might remind
+      me why I keep trying"
+  - speaker: Nomsa
+    text: 'Your time is valuable, but so is your peace of mind.
+
+
+      Will you
+      help these children today?'
+  unlockTask: {fileID: 11400000, guid: a5ed94a7ef1da00429084aabd851c3d2, type: 2}

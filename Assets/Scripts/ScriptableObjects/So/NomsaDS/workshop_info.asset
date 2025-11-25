@@ -13,14 +13,25 @@ MonoBehaviour:
   m_Name: workshop_info
   m_EditorClassIdentifier: 
   id: 
-  playerChoiceText: 'Tell me more about the workshop. '
+  playerChoiceText: 'Tell me more about what you are doing .. '
   lines:
   - speaker: Nomsa
-    text: " It\u2019s computer literacy and interview prep. Nothing fancy, but it's
-      a start."
+    text: We are organizing a massive protest and vigil today. This is crucial for
+      morale.
   - speaker: Player
     text: ' Sounds helpful. Who can join?'
   - speaker: Nomsa
-    text: "Anyone. Especially the ones who think they\u2019re too far behind. That\u2019s
-      who we\u2019re here for.\r\n"
-  unlockTask: {fileID: 11400000, guid: 3a1c51453c6dcce4bbe854425d8a9375, type: 2}
+    text: "Anyone. maybe you want to lead the organization? It\u2019s exhausting
+      emotionally and logistically\r\n"
+  - speaker: Player
+    text: "Leading\u2026 that\u2019s a lot of responsibility.\r\n"
+  - speaker: Nomsa
+    text: "You\u2019ll lose a day of income, but your stress will drop significantly.Your
+      community needs someone brave enough to act\r\n"
+  - speaker: Player
+    text: "This could break me emotionally\u2026 or heal me\r\n"
+  - speaker: Nomsa
+    text: 'Will you take this task?
+
+'
+  unlockTask: {fileID: 11400000, guid: d2d3b96dc83828c49bc642ef44603eab, type: 2}

@@ -16,15 +16,23 @@ MonoBehaviour:
   playerChoiceText: 'Do you think things will get better around here?  '
   lines:
   - speaker: Mama Nandi
-    text: "Better? Eish\u2026 better is a long road with many potholes, my child."
+    text: "Eish, my child, you look tired\u2026 life been throwing stones again"
   - speaker: Player
-    text: But is it even worth trying then?
+    text: "I\u2026 I guess I am tired. You\u2019re right"
   - speaker: Mama Nandi
-    text: "Of course it is. I\u2019ve seen people rise out of nothing. I've seen
-      girls with no shoes start their own businesses. Boys become builders. It\u2019s
-      hard\u2026 but it\u2019s not impossible."
+    text: The clinic needs someone steady to fetch water and clean the entryway.
+      Simple work.
   - speaker: Player
-    text: You really believe that?
+    text: "Cleaning and fetching water\u2026 that I can manage"
   - speaker: Mama Nandi
-    text: "If I didn\u2019t believe, I\u2019d have stopped cooking a long time ago."
+    text: "It is only R15, but it\u2019s honest. You won\u2019t look over your shoulder
+      tonigh"
+  - speaker: Player
+    text: "It\u2019s not much, but\u2026 at least I won\u2019t worry tonight"
+  - speaker: Mama Nandi
+    text: "Take this small step first. It\u2019s better than no step"
+  - speaker: Player
+    text: Better a small step than nothing at all
+  - speaker: Mama Nandi
+    text: Can you help me out with this task today?
   unlockTask: {fileID: 11400000, guid: fed86eff5320f2f4a975d6563d0f8ce6, type: 2}

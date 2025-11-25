@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 555f0c0fd9f126c4b8a39670e56b686f, type: 3}
+  m_Name: Mandla_Debt Collection Muscle
+  m_EditorClassIdentifier: 
+  taskName: '"Debt Collection Muscle"'
+  taskDescription: Intimidate a mother struggling to pay into handing over her last
+    cash. High pay, but the guilt will sit heavy on your soul.
+  moneyReward: 120
+  happinessReward: -20
+  stressChange: 12
+  declineHappinessPenalty: -5
+  declineStressIncrease: 5
+  moralScoreChange: 10

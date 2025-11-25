@@ -21,10 +21,17 @@ MonoBehaviour:
     text: Everything just feels stuck. I keep trying, and nothing changes
   - speaker: Mama Nandi
     text: Mmmm... even rain takes time to fall, but it does come. And when it does,
-      even dry land drinks.
+      even dry land drinks and also i heard that themarket supervisor needs strong
+      hands for early weekend setup, a full 12-hour shift
   - speaker: Player
-    text: "ut what if it doesn\u2019t come for me?"
+    text: "Twelve hours? That\u2019s brutal.."
   - speaker: Mama Nandi
-    text: "Then you scream at the sky until it listens. You\u2019re allowed to be
-      tired, child. But not to give up."
+    text: "It\u2019s exhausting work, back-breaking, but it pays R50 straight up"
+  - speaker: Player
+    text: "but I need R50, I\u2019ll be tired, but at least it\u2019s honest work
+      and i also need the stability this money will bring"
+  - speaker: Mama Nandi
+    text: "Hard work earns respect\u2026 even more than cash.\u201D"
+  - speaker: Mama Nandi
+    text: Will you take this task?
   unlockTask: {fileID: 11400000, guid: 1c51858b8a3361c418e9292edc252ea8, type: 2}

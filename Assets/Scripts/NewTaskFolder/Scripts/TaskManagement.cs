@@ -37,7 +37,7 @@ public class TaskManagement : MonoBehaviour
             taskPanel.SetActive(false);
     }
 
-    public void ShowTaskPanel(TaskData task)
+    public void ShowTaskPanel(TaskData task)
     {
         if (task == null)
         {
@@ -51,21 +51,17 @@ public class TaskManagement : MonoBehaviour
         {
             taskPanel.SetActive(true);
 
+            // Pause Game
             Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
-            Time.timeScale = 0f; // pause game
+            Time.timeScale = 0f;
 
-            if (taskNameText != null)
+            // Populate UI text fields (using the formatted string logic)
+            if (taskNameText != null)
                 taskNameText.text = task.taskName;
 
             if (taskDescText != null)
-                taskDescText.text = task.taskDescription;
-
-            Debug.Log($"Task Panel opened for: {task.taskName}");
-        }
-        else
-        {
-            Debug.LogError("Task Panel not assigned in TaskManagement!");
+                taskDescText.text = FormatTaskDescription(task);
         }
     }
 
@@ -89,10 +85,11 @@ public class TaskManagement : MonoBehaviour
         GameManager.Instance.money += currentTask.moneyReward;
         GameManager.Instance.happiness += currentTask.happinessReward;
         GameManager.Instance.stress += currentTask.stressChange;
+        GameManager.Instance.moralityScore += currentTask.moralScoreChange;
 
         ResetTimeAndCursor();
 
-        // Load mini-game if needed
+        /* Load mini-game if needed
         if (currentTask.requiresMiniGame && !string.IsNullOrEmpty(currentTask.miniGameSceneName))
         {
             SceneManager.LoadScene(currentTask.miniGameSceneName);
@@ -101,10 +98,34 @@ public class TaskManagement : MonoBehaviour
         {
             // No mini-game → just advance day
             GameManager.Instance.NextDay();
-        }
+        }*/
 
         // Clear task
         currentTask = null;
+    }
+    private string FormatTaskDescription(TaskData task)
+    {
+        string description = task.taskDescription + "\n\n";
+
+        // Money Reward
+        description += $"<color=green>💰 REWARD: R {task.moneyReward:0.00}</color>\n";
+
+        // Stress Change
+        string stressColor = (task.stressChange > 0) ? "red" : "blue";
+        string stressSign = (task.stressChange >= 0) ? "+" : "";
+        description += $"<color={stressColor}>🧠 STRESS: {stressSign}{task.stressChange:0.0}</color>\n";
+
+        // Happiness Change
+        string happinessColor = (task.happinessReward > 0) ? "yellow" : "red";
+        string happinessSign = (task.happinessReward >= 0) ? "+" : "";
+        description += $"<color={happinessColor}>❤️ HAPPINESS: {happinessSign}{task.happinessReward:0.0}</color>\n";
+
+        // Morality Change (Optional, but useful feedback)
+        string moralColor = (task.moralScoreChange > 0) ? "red" : "green";
+        string moralSign = (task.moralScoreChange >= 0) ? "+" : "";
+        description += $"<color={moralColor}>⚖️ MORALITY: {moralSign}{task.moralScoreChange}</color>";
+
+        return description;
     }
 
     private void DeclineTask()

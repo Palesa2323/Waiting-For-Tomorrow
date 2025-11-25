@@ -22,9 +22,15 @@ MonoBehaviour:
   - speaker: Player
     text: That many people come for food?
   - speaker: Mama Nandi
-    text: More than I ever thought I'd see. Young ones, old ones..
+    text: "More than I ever thought I'd see. Young ones, old ones..and by the way
+      Old Man Dlamini\u2019s roof is leaking badly. If he gets sick, we all fail
+      him."
   - speaker: Player
-    text: "It\u2019s heartbreaking."
+    text: "i will go check it out, I\u2019ll be sweating all day, but I can do it"
   - speaker: Mama Nandi
-    text: Heartbreaking, yes. But also motivating...
-  unlockTask: {fileID: 11400000, guid: c71b5ece030041248b6b45546aa9aa39, type: 2}
+    text: He can only give you R30, but you will sleep well knowing he is safe.
+  - speaker: Player
+    text: "Knowing someone is safe\u2026 that matters more than money."
+  - speaker: Mama Nandi
+    text: "The work is hard, but it\u2019s honest. Are you willing?"
+  unlockTask: {fileID: 11400000, guid: 969075531c6af6740acaf42917d530ac, type: 2}

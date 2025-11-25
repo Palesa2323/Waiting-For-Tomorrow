@@ -18,8 +18,8 @@ public class GameManager : MonoBehaviour
     public float happiness = 50f;
     public int currentDay = 1;
     public int maxDays = 7; // Goal to survive 7 days
+    public int moralityScore = 0;
 
-    
     [HideInInspector] public TaskData lastAcceptedTask;
 
     [Header("UI References")]

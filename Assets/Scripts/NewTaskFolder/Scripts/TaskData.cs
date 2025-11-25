@@ -15,6 +15,5 @@ public class TaskData : ScriptableObject
     public float declineHappinessPenalty;
     public float declineStressIncrease;
 
-    public bool requiresMiniGame;
-    public string miniGameSceneName;
+    public int moralScoreChange = 0;
 }

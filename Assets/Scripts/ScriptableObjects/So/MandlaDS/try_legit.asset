@@ -23,4 +23,16 @@ MonoBehaviour:
   - speaker: Mandla
     text: "Yeah, well... life didn\u2019t ask what I can carry. Just threw it on
       me anyway."
-  unlockTask: {fileID: 11400000, guid: 969075531c6af6740acaf42917d530ac, type: 2}
+  - speaker: Mandla
+    text: 'Anyways lets stop feeling sorry for ourselves . i have the mother of all
+      jobs. Identity theft. Huge risk '
+  - speaker: Player
+    text: 'identity theft??? '
+  - speaker: Mandla
+    text: "Think about it and If you get caught, you could lose everything\u2026
+      maybe even go to jail.But the payout? R16000! That clears your debt instantly."
+  - speaker: Player
+    text: "R16000\u2026 that\u2019s everything."
+  - speaker: Mandla
+    text: "Instant ruin\u2026 or instant freedom.Are you ready for this?"
+  unlockTask: {fileID: 11400000, guid: 5752bebb6844c7447bccc6bc7929f180, type: 2}

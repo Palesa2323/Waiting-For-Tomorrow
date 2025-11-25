@@ -16,11 +16,14 @@ MonoBehaviour:
   playerChoiceText: 'Have you tried applying somewhere legit? '
   lines:
   - speaker: Mandla
-    text: "Tried. CVs ghosted. Interviews fake. They want someone with experience
-      I can\u2019t afford to get."
+    text: Yes and i got something for you too , the Boss needs a heavy word with
+      a debtor. A very heavy word.
   - speaker: Player
     text: " That\u2019s messed up."
   - speaker: Mandla
-    text: "That\u2019s the game, bro. If you ain\u2019t already winning, you don\u2019t
-      even get to play."
-  unlockTask: {fileID: 11400000, guid: fed86eff5320f2f4a975d6563d0f8ce6, type: 2}
+    text: "Go in, collect R120. Don\u2019t leave without it"
+  - speaker: Player
+    text: "But hurting someone\u2026 I don\u2019t like this."
+  - speaker: Mandla
+    text: "This isn\u2019t for the faint of heart. Will you take the job"
+  unlockTask: {fileID: 11400000, guid: e5be459936be2e84a83d95f04efc75ce, type: 2}

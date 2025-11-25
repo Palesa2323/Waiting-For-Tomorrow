@@ -16,10 +16,18 @@ MonoBehaviour:
   playerChoiceText: 'What kind of hustle are you talking about? '
   lines:
   - speaker: Mandla
-    text: You do small runs. Packages. Cash in hand. No tax. No questions.
+    text: Listen, I got a job you can knock out fast. Tonight. Fence job
   - speaker: Player
     text: That sounds dangerous.
   - speaker: Mandla
-    text: Dangerous? Maybe. But I need to eat today, not next year when a job maybe
-      calls back.
-  unlockTask: {fileID: 11400000, guid: 1c51858b8a3361c418e9292edc252ea8, type: 2}
+    text: "Cut the perimeter fence at the old depot. We \u2018borrow\u2019 some supplies.
+      R75 cash"
+  - speaker: Player
+    text: "R75\u2026 that could feed me for a bit."
+  - speaker: Mandla
+    text: "Yeah, it\u2019s sketchy. You\u2019ll be looking over your shoulder."
+  - speaker: Player
+    text: I hate having to even think about this..
+  - speaker: Mandla
+    text: Do you want R75 or go hungry?
+  unlockTask: {fileID: 11400000, guid: 7d8ef8384bae9f04ba3e8af7eaedbc8c, type: 2}

@@ -16,9 +16,15 @@ MonoBehaviour:
   playerChoiceText: 'Can I help with anything? '
   lines:
   - speaker: Nomsa
-    text: ' You? Absolutely. I need flyers printed, people organized, the works.'
+    text: "I need help in the community garden. Focus on the soil and life , It\u2019s
+      R0, but it will cut your anxiety by nearly half. You need that reset"
   - speaker: Player
-    text: " I\u2019m in. Just tell me what to do."
+    text: "R0\u2026 I don\u2019t have money to spare.But my head\u2026 it\u2019s
+      too much right now."
   - speaker: Nomsa
-    text: Yes! This is how we start. Together.
-  unlockTask: {fileID: 11400000, guid: 6b5dd466b5d811140a27e2a23eff9aa7, type: 2}
+    text: Sometimes your mind needs nourishment more than your wallet
+  - speaker: Player
+    text: "I can\u2019t keep running in circles."
+  - speaker: Nomsa
+    text: Can you take this task today
+  unlockTask: {fileID: 11400000, guid: c71b5ece030041248b6b45546aa9aa39, type: 2}
