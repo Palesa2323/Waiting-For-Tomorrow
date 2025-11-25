@@ -71,7 +71,7 @@ public class TaskManagement : MonoBehaviour
         ShowTaskPanel(task);
     }
 
-    private void AcceptTask()
+    public void AcceptTask()
     {
         if (currentTask == null)
         {
@@ -128,7 +128,7 @@ public class TaskManagement : MonoBehaviour
         return description;
     }
 
-    private void DeclineTask()
+    public void DeclineTask()
     {
         if (currentTask == null)
         {
