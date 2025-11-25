@@ -8,9 +8,15 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         if (Instance == null)
+        {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
         else
+        {
+
             Destroy(gameObject);
+        }
     }
 
     public float money = 50.00f;
@@ -104,6 +110,7 @@ public class GameManager : MonoBehaviour
 
         Debug.Log($"--- Starting Day: {currentDay} ---");
 
+        CheckStressLevel();
 
         if (currentDay > maxDays)
         {
