@@ -7,7 +7,7 @@ public class DayManager : MonoBehaviour
     public static DayManager Instance;
 
     public int currentDay = 1;
-    public float dayLength = 1000f; // 1 in-game day = 60 seconds
+    public float dayLength = 1000f; // 1 in-game day = 10 minutes
     private float dayTimer;
 
     public TextMeshProUGUI dayText; // Assign in inspector

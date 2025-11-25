@@ -10,7 +10,7 @@ public class EndSceneDisplay : MonoBehaviour
 
     [Header("Scene Settings")]
     public bool isWinScene = false;
-    public string mainMenuSceneName = "MainMenuScene";
+    public string MainMenuScene = "MainMenuScene";
 
     void Start()
     {
@@ -109,9 +109,9 @@ public class EndSceneDisplay : MonoBehaviour
         }
 
         // 3. Load the Main Menu scene using the public field
-        if (!string.IsNullOrEmpty(mainMenuSceneName))
+        if (!string.IsNullOrEmpty(MainMenuScene))
         {
-            SceneManager.LoadScene(mainMenuSceneName);
+            SceneManager.LoadScene(MainMenuScene);
         }
         else
         {
