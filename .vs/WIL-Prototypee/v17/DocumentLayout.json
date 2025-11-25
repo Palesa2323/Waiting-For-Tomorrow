@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\daymanager\\endscenedisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\daymanager\\endscenedisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\daymanager\\daymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\daymanager\\daymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|c:\\users\\lab_services_student\\documents\\github\\wil-prototypee\\assets\\scripts\\daymanager\\endscenedisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\daymanager\\endscenedisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8908FBBD-8125-7C65-02E5-80813AACDC52}|Assembly-CSharp.csproj|C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\assets\\scripts\\gamemanager\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -74,24 +74,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "EndSceneDisplay.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\DayManager\\EndSceneDisplay.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DayManager\\EndSceneDisplay.cs",
               "ToolTip": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\DayManager\\EndSceneDisplay.cs",
               "RelativeToolTip": "Assets\\Scripts\\DayManager\\EndSceneDisplay.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAwAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T13:23:59.44Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DayManager.cs",
               "DocumentMoniker": "C:\\Users\\lab_services_student\\Documents\\GitHub\\WIL-Prototypee\\Assets\\Scripts\\DayManager\\DayManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DayManager\\DayManager.cs",
