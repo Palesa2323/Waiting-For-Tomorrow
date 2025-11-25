@@ -3,6 +3,8 @@
 public class NPCTrigger : MonoBehaviour
 {
     public NPCDialogue npcDialogue;
+    public KeyCode interactionKey = KeyCode.E;
+    private bool playerIsNearby = false;
 
     private DialogueUIManager dialogueManager;
 

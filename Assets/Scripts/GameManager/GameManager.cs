@@ -1,8 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement; // Added for scene loading
-
+using UnityEngine.SceneManagement; 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
@@ -14,7 +13,7 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
     }
 
-    public float money = 50.00f; // NEW: The money variable was missing
+    public float money = 50.00f;
     public float stress = 5f;
     public float happiness = 50f;
     public int currentDay = 1;
@@ -41,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void UpdateHUD()
     {
-        // FIX: Display the actual 'money' variable formatted as currency.
+  
         moneyText.text = $"R {money:0.00}";
 
         // Ensure sliders don't exceed max value (e.g., 100)
@@ -52,7 +51,7 @@ public class GameManager : MonoBehaviour
     public void CheckStressLevel()
     {
         // Check for immediate game over
-        if (stress >= 20f)
+        if (stress >= 15f)
         {
             Debug.Log("Game Over: Depression Hit!");
             if (SceneManager.GetActiveScene().name != loseSceneName)
@@ -62,20 +61,18 @@ public class GameManager : MonoBehaviour
 
     public bool CheckWinCondition()
     {
-        // Example: Win if you survived 7 days AND have decent money/low stress
-        return currentDay > maxDays && money >= 150f && stress < 10f;
+        return currentDay > maxDays && money >= 100f && stress < 10f;
     }
 
     public void NextDay()
     {
         currentDay++;
 
-        // Optional: Apply a small daily stress reduction for sleeping
         stress = Mathf.Max(0f, stress - 1.0f);
 
         Debug.Log($"--- Starting Day: {currentDay} ---");
 
-        // 1. End Game Check
+
         if (currentDay > maxDays)
         {
             if (CheckWinCondition())
@@ -91,14 +88,12 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        // 2. Load Main Scene if coming back from Mini-Game
+  
         if (SceneManager.GetActiveScene().name != mainSceneName)
         {
             SceneManager.LoadScene(mainSceneName);
         }
-
-        // 3. Reset NPC Interaction State (Optional but necessary for a clean loop)
-        // You would need a list of NPCTrigger objects and loop through them to call ResetForNewDay().
+        
     }
 
     public void ApplyTaskRewards(TaskData task)
@@ -109,7 +104,7 @@ public class GameManager : MonoBehaviour
         stress += task.stressChange;
         happiness += task.happinessReward;
 
-        lastAcceptedTask = null; // Clear the task reference
+        lastAcceptedTask = null; 
         CheckStressLevel(); // Re-check stress immediately
     }
 }

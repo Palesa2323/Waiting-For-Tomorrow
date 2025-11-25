@@ -37,7 +37,6 @@ public class TaskManagement : MonoBehaviour
             taskPanel.SetActive(false);
     }
 
-    // Show the task panel with task details
     public void ShowTaskPanel(TaskData task)
     {
         if (task == null)
