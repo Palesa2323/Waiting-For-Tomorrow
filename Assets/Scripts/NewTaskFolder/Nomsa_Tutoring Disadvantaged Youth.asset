@@ -20,4 +20,5 @@ MonoBehaviour:
   stressChange: -12
   declineHappinessPenalty: -10
   declineStressIncrease: 7
+  foodReward: 50
   moralScoreChange: -3

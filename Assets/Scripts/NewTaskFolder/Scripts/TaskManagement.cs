@@ -75,33 +75,24 @@ public class TaskManagement : MonoBehaviour
     {
         if (currentTask == null)
         {
-            Debug.LogWarning("No task assigned to accept!");
+            Debug.LogWarning("No task assigned to accept! Cannot apply consequences.");
             return;
         }
 
         taskPanel.SetActive(false);
 
-        // Apply rewards
-        GameManager.Instance.money += currentTask.moneyReward;
-        GameManager.Instance.happiness += currentTask.happinessReward;
-        GameManager.Instance.stress += currentTask.stressChange;
-        GameManager.Instance.moralityScore += currentTask.moralScoreChange;
+        // --- FIX 1: Use the dedicated GameManager method for full consequence handling ---
+        // This method applies all rewards (money, stress, happiness, morality) 
+        // AND performs the vital clamping/stress check.
+        GameManager.Instance.ApplyTaskConsequences(currentTask);
+
+        // --- FIX 2: Advance the Day and End the Player's Turn ---
+        GameManager.Instance.NextDay();
 
         ResetTimeAndCursor();
 
-        /* Load mini-game if needed
-        if (currentTask.requiresMiniGame && !string.IsNullOrEmpty(currentTask.miniGameSceneName))
-        {
-            SceneManager.LoadScene(currentTask.miniGameSceneName);
-        }
-        else
-        {
-            // No mini-game → just advance day
-            GameManager.Instance.NextDay();
-        }*/
-
-        // Clear task
-        currentTask = null;
+        // Clear task
+        currentTask = null;
     }
     private string FormatTaskDescription(TaskData task)
     {
@@ -138,16 +129,20 @@ public class TaskManagement : MonoBehaviour
 
         taskPanel.SetActive(false);
 
-        // Apply penalties
-        GameManager.Instance.stress += currentTask.declineStressIncrease;
+        // Apply penalties
+        GameManager.Instance.stress += currentTask.declineStressIncrease;
         GameManager.Instance.happiness += currentTask.declineHappinessPenalty;
+
+        // --- FIX 3: Manually clamp the stats after the decline penalty ---
+        GameManager.Instance.stress = Mathf.Clamp(GameManager.Instance.stress, 0f, 20f);
+        GameManager.Instance.happiness = Mathf.Clamp(GameManager.Instance.happiness, 0f, 100f);
 
         ResetTimeAndCursor();
 
         GameManager.Instance.NextDay();
 
-        // Clear task
-        currentTask = null;
+        // Clear task
+        currentTask = null;
     }
 
     private void ResetTimeAndCursor()

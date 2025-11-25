@@ -14,6 +14,7 @@ public class TaskData : ScriptableObject
 
     public float declineHappinessPenalty;
     public float declineStressIncrease;
+    public float foodReward;
 
     public int moralScoreChange = 0;
 }

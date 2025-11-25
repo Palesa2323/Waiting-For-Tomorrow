@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public int currentDay = 1;
     public int maxDays = 7; // Goal to survive 7 days
     public int moralityScore = 0;
+    public float foodAmount = 10f; // Starting Food amount
 
     [HideInInspector] public TaskData lastAcceptedTask;
 
@@ -26,6 +27,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI moneyText;
     public Slider stressSlider;
     public Slider happinessSlider;
+    public TextMeshProUGUI foodText;
+    public TextMeshProUGUI moralityText;
 
     [Header("Scene Names")]
     public string loseSceneName = "LoseScene";
@@ -42,10 +45,39 @@ public class GameManager : MonoBehaviour
     {
   
         moneyText.text = $"R {money:0.00}";
+        if (foodText != null)
+            foodText.text = $"Food: {foodAmount:0}";
 
         // Ensure sliders don't exceed max value (e.g., 100)
         stressSlider.value = Mathf.Clamp(stress, stressSlider.minValue, stressSlider.maxValue);
         happinessSlider.value = Mathf.Clamp(happiness, happinessSlider.minValue, happinessSlider.maxValue);
+
+        if (moralityText != null)
+        {
+            string colorTag;
+            string label;
+
+            if (moralityScore > 5)
+            {
+                // High positive score = Unethical Path (Red/Orange warning)
+                colorTag = "red";
+                label = "Integrity Drained";
+            }
+            else if (moralityScore < -5)
+            {
+                // High negative score = Ethical Path (Green/Blue reward)
+                colorTag = "green";
+                label = "Integrity Strong";
+            }
+            else
+            {
+                // Neutral or early game (White/Yellow)
+                colorTag = "yellow";
+                label = "Morality Balance";
+            }
+
+            moralityText.text = $"<color={colorTag}>{label}</color>: {moralityScore}";
+        }
     }
 
     public void CheckStressLevel()
@@ -96,15 +128,30 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void ApplyTaskRewards(TaskData task)
+    // Change this line:
+    // public void ApplyTaskRewards(TaskData task) // (Example of the likely old name)
+
+    // TO THIS:
+    // Inside GameManager.cs
+
+    public void ApplyTaskConsequences(TaskData task)
     {
         if (task == null) return;
 
         money += task.moneyReward;
         stress += task.stressChange;
         happiness += task.happinessReward;
+        moralityScore += task.moralScoreChange;
 
-        lastAcceptedTask = null; 
-        CheckStressLevel(); // Re-check stress immediately
+        // NEW: Apply food reward
+        foodAmount += task.foodReward;
+
+        // Clamp stats to valid ranges
+        stress = Mathf.Clamp(stress, 0f, 20f);
+        happiness = Mathf.Clamp(happiness, 0f, 100f);
+        foodAmount = Mathf.Max(0f, foodAmount); // Food should not go below zero
+
+        CheckStressLevel(); // Still checks for stress failure
+                            // You might also add a CheckFoodLevel() if low food is a failure state
     }
 }
